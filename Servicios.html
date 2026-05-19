@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Ingeniería | Jefferson Seijas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    <nav class="sticky top-0 z-50 bg-slate-900 border-b border-cyan-500/20 px-6 py-4 flex justify-between items-center shadow-md">
+        <div class="flex items-center space-x-3">
+            <a href="index.html" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 px-3 py-2 rounded-lg font-black tracking-wider text-sm shadow-md shadow-cyan-500/20 transition-colors block">
+                JS CONSULTING
+            </a>
+            <span class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
+        </div>
+        <div class="flex items-center space-x-6 font-semibold text-sm">
+            <a href="Servicios.html" class="text-cyan-400 underline">Servicios</a>
+            <a href="catalogo_de_trabajos.html" class="text-slate-300 hover:text-cyan-400 transition-colors">Catálogo de Trabajos</a>
+            <a href="contacto.html" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 px-4 py-2 rounded-lg transition-all">
+                Contacto / Cotizar
+            </a>
+        </div>
+    </nav>
+
+    <main class="container mx-auto max-w-4xl py-16 px-6 flex-grow space-y-12">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-widest bg-blue-100 px-3 py-1 rounded-full">
+                Portafolio de Servicios Técnicos
+            </span>
+            <h1 class="text-3xl sm:text-4xl font-black text-slate-900 mt-4 mb-3">Soluciones de Ingeniería a la Medida</h1>
+            <p class="text-slate-600 text-sm leading-relaxed">Descubre en detalle mis capacidades de despliegue, aseguramiento e ingeniería inversa para ecosistemas de TI corporativos e industriales.</p>
+        </div>
+
+        <div class="space-y-4">
+
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+                <button onclick="toggleAcordeon('detalles-redes', 'icono-redes')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">🌐</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Diseño y Arquitectura de Redes de Alto Rendimiento</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Ruteo specialized, conectividad avanzada y alta disponibilidad.</p>
+                        </div>
+                    </div>
+                    <span id="icono-redes" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
+                </button>
+                
+                <div id="detalles-redes" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
+                    <p class="leading-relaxed">Implementación de infraestructuras lógicas estables destinadas a soportar alta demanda de tráfico corporativo, garantizando la escalabilidad de la red sin degradación del servicio.</p>
+                    
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
+                        <h4 class="font-bold text-base tracking-wide flex items-center">
+                            <span class="mr-2">⚡</span> Core Routing y Hardware de Alta Gama:
+                        </h4>
+                        <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">MikroTik RouterOS</strong>
+                                Configuración avanzada sobre plataformas <strong class="text-cyan-300 font-bold">CCR (Cloud Core Router)</strong> y <strong class="text-cyan-300 font-bold">CRS</strong>, optimizando el ruteo dinámico y políticas perimetrales.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Cisco Systems</strong>
+                                Despliegue de arquitecturas de red estructuradas bajo estándares globales de la industria, switches core y segmentación robusta.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Alta Disponibilidad</strong>
+                                Implementación de balanceo de cargas inteligente mediante <strong class="text-cyan-300 font-bold">PCC</strong> y sistemas de Failover automático ante caídas de proveedores.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Enrutamiento Avanzado</strong>
+                            Configuración experta de routers especializados como <strong class="text-blue-600 font-bold">MikroTik (CCR/CRS)</strong> y <strong class="text-blue-600 font-bold">Cisco</strong>. Balanceo de carga inteligente mediante PCC (Per-Connection Classifier) y Failover automático para tolerar caídas de ISPs.
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Optimización de Infraestructura</strong>
+                            Diseño de redes desde cero, segmentación lógica estricta mediante <strong class="text-blue-600 font-bold">VLANs</strong> para aislar el tráfico crítico de la empresa, e implementación de telefonía IP integrada (<strong class="text-blue-600 font-bold">VoIP</strong>).
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+                <button onclick="toggleAcordeon('detalles-seguridad', 'icono-seguridad')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">🔒</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Ciberseguridad Avanzada e Interconexión Militar</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Túneles encriptados, firewalls perimetrales y blindaje de activos.</p>
+                        </div>
+                    </div>
+                    <span id="icono-seguridad" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
+                </button>
+                
+                <div id="detalles-seguridad" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
+                    <p class="leading-relaxed">Auditoría y aseguramiento de redes locales y externas para mitigar brechas de seguridad, inyecciones de código o accesos no autorizados mediante hardware o software especializado.</p>
+                    
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
+                        <h4 class="font-bold text-base tracking-wide flex items-center">
+                            <span class="mr-2">🛡️</span> Especialización en Despliegue de VPNs Seguras:
+                        </h4>
+                        <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">WireGuard</strong>
+                                Enfoque moderno de baja latencia, ideal para interconexiones internacionales multi-sitio de alta velocidad y consumo optimizado de recursos.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">IPsec / IKEv2</strong>
+                                Estándar robusto de la industria para túneles permanentes entre sucursales corporativas, con cifrado pesado de seguridad militar.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">OpenVPN / L2TP</strong>
+                                Soluciones versátiles para acceso remoto seguro de empleados independientes (Home Office) con políticas de autenticación estrictas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Seguridad Perimetral Estricta</strong>
+                            Configuración de reglas de Firewall avanzadas por hardware o software, prevención de intrusos (IDS/IPS), y aislamiento total de redes administrativas y públicas.
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Sistemas de Monitoreo Cerrados</strong>
+                            Diseño y aseguramiento de sistemas de seguridad CCTV de circuito cerrado integrados a la red, blindados contra accesos externos maliciosos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+                <button onclick="toggleAcordeon('detalles-sistemas', 'icono-sistemas')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">🐧</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Virtualización, Servicios Cloud y Entornos Linux</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Migración a software libre, servidores redundantes y almacenamiento local centralizado.</p>
+                        </div>
+                    </div>
+                    <span id="icono-sistemas" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
+                </button>
+                
+                <div id="detalles-sistemas" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
+                    <p class="leading-relaxed">Consolidación de servicios informáticos locales y remotos para reducir costos de infraestructura de hardware, incrementando al mismo tiempo la disponibilidad del software corporativo.</p>
+                    
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
+                        <h4 class="font-bold text-base tracking-wide flex items-center">
+                            <span class="mr-2">☁️</span> Ecosistema de Servidores e Infraestructura de Datos:
+                        </h4>
+                        <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Linux Corporativo</strong>
+                                Despliegue y tuning de entornos basados en <strong class="text-cyan-300 font-bold">Fedora Workstation</strong>, <strong class="text-cyan-300 font-bold">Mint</strong> y servidores <strong class="text-cyan-300 font-bold">Debian/AlmaLinux</strong> de alta disponibilidad.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Hipervisores KVM / VMware</strong>
+                                Consolidación de hardware físico mediante virtualización robusta con segmentación de recursos redundantes y tolerancia a fallos.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Almacenamiento NAS & Backup</strong>
+                                Arquitecturas Cloud Privadas y almacenamiento en red centralizado para la protección inalterable de activos lógicos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Administración y Migración Linux</strong>
+                            Especialista en la migración completa de estaciones de trabajo corporativas hacia entornos Linux optimizados (<strong class="text-blue-600 font-bold">Fedora / Mint / Debian Server</strong>), endureciendo la seguridad del sistema y ampliando la vida útil del hardware.
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Virtualización y Almacenamiento NAS/Cloud</strong>
+                            Montaje de servidores virtuales redundantes (<strong class="text-blue-600 font-bold">KVM, VMware</strong>) y configuración de arquitecturas de almacenamiento en red tipo NAS o Cloud Privado para asegurar el respaldo inalterable de los datos de la empresa.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
+                <button onclick="toggleAcordeon('detalles-industrial', 'icono-industrial')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">⚙️</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Automatización Industrial e Ingeniería Inversa</h3>
+                            <p class="text-xs text-slate-500 mt-0.5">Análisis de hardware a bajo nivel y soporte de TI avanzado.</p>
+                        </div>
+                    </div>
+                    <span id="icono-industrial" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
+                </button>
+                
+                <div id="detalles-industrial" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
+                    <p class="leading-relaxed">Soporte TI especializado e intervenciones complejas a nivel de hardware electrónico y sistemas embebidos industriales.</p>
+                    
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
+                        <h4 class="font-bold text-base tracking-wide flex items-center">
+                            <span class="mr-2">🔬</span> Ingeniería de Hardware y Continuidad Global:
+                        </h4>
+                        <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Análisis a Bajo Nivel</strong>
+                                Diagnóstico y reparación profunda de placas base, controladores lógicos y microcomponentes electrónicos sin esquemáticos oficiales.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Sistemas Embebidos</strong>
+                                Optimización e ingeniería inversa sobre firmware y hardware industrial para extender el ciclo de vida operativo de la maquinaria.
+                            </div>
+                            <div class="bg-white/10 p-3 rounded-lg border border-white/10">
+                                <strong class="text-white block mb-0.5 font-bold">Soporte Remoto 24/7</strong>
+                                Gestión centralizada de incidentes críticos en servidores e infraestructura de red con disponibilidad global para misiones críticas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid sm:grid-cols-2 gap-3">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Ingeniería Inversa de Hardware</strong>
+                            Diagnóstico y análisis avanzado a nivel físico de componentes electrónicos, placas base y controladores lógicos para optimizar o reparar sistemas sin documentación oficial del fabricante.
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
+                            <strong class="text-slate-900 block mb-1">Soporte TI Remoto Global</strong>
+                            Gestión, monitoreo y resolución de incidencias complejas de servidores e infraestructura de red de manera completamente remota con disponibilidad orientada a la continuidad operativa <strong class="text-blue-600 font-bold">24/7</strong>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="p-8 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
+        Jefferson Seijas © 2026 | Desarrollado bajo una mentalidad de mejora continua y filosofía estoica.
+        </footer>
+
+    <script>
+        function toggleAcordeon(idDesplegable, idIcono) {
+            const contenido = document.getElementById(idDesplegable);
+            const icono = document.getElementById(idIcono);
+
+            if (contenido.classList.contains('hidden')) {
+                contenido.classList.remove('hidden');
+                icono.classList.add('rotate-90', 'text-cyan-600');
+            } else {
+                contenido.classList.add('hidden');
+                icono.classList.remove('rotate-90', 'text-cyan-600');
+            }
+        }
+    </script>
+
+</body>
+</html>
