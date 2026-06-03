@@ -13,14 +13,18 @@
             <a href="index.html" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 px-3 py-2 rounded-lg font-black tracking-wider text-sm shadow-md shadow-cyan-500/20 transition-colors block">
                 JS CONSULTING
             </a>
-            <span class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
+            <span data-key="nav-sub" class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
         </div>
-        <div class="flex items-center space-x-6 font-semibold text-sm">
-            <a href="Servicios.html" class="text-cyan-400 underline">Servicios</a>
-            <a href="catalogo_de_trabajos.html" class="text-slate-300 hover:text-cyan-400 transition-colors">Catálogo de Trabajos</a>
-            <a href="contacto.html" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 px-4 py-2 rounded-lg transition-all">
+        <div class="flex items-center space-x-4 font-semibold text-sm">
+            <a href="Servicios.html" data-key="nav-servicios" class="text-cyan-400 underline">Servicios</a>
+            <a href="catalogo_de_trabajos.html" data-key="nav-catalogo" class="text-slate-300 hover:text-cyan-400 transition-colors">Catálogo de Trabajos</a>
+            <a href="contacto.html" data-key="nav-contacto" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 px-4 py-2 rounded-lg transition-all">
                 Contacto / Cotizar
             </a>
+            <!-- BOTÓN SELECTOR DE IDIOMA GLOBAL -->
+            <button id="language-toggle" class="bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg font-bold transition-all text-xs tracking-wider uppercase">
+                EN
+            </button>
         </div>
     </nav>
 
@@ -35,21 +39,22 @@
 
         <div class="space-y-4">
 
+            <!-- ACORDEÓN 1 -->
             <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
                 <button onclick="toggleAcordeon('detalles-redes', 'icono-redes')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
                     <div class="flex items-center space-x-4">
                         <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">🌐</span>
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900">Diseño y Arquitectura de Redes de Alto Rendimiento</h3>
-                            <p class="text-xs text-slate-500 mt-0.5">Ruteo specialized, conectividad avanzada y alta disponibilidad.</p>
+                            <h3 data-key="s1-h3" class="text-xl font-bold text-slate-900">Diseño y Arquitectura de Redes de Alto Rendimiento</h3>
+                            <p data-key="s1-p-sub" class="text-xs text-slate-500 mt-0.5">Ruteo especializado, conectividad avanzada y alta disponibilidad.</p>
                         </div>
                     </div>
                     <span id="icono-redes" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
                 </button>
-                
+
                 <div id="detalles-redes" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
-                    <p class="leading-relaxed">Implementación de infraestructuras lógicas estables destinadas a soportar alta demanda de tráfico corporativo, garantizando la escalabilidad de la red sin degradación del servicio.</p>
-                    
+                    <p data-key="s1-desc" class="leading-relaxed">Implementación de infraestructuras lógicas estables destinadas a soportar alta demanda de tráfico corporativo, garantizando la escalabilidad de la red sin degradación del servicio.</p>
+
                     <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
                         <h4 class="font-bold text-base tracking-wide flex items-center">
                             <span class="mr-2">⚡</span> Core Routing y Hardware de Alta Gama:
@@ -57,47 +62,48 @@
                         <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">MikroTik RouterOS</strong>
-                                Configuración avanzada sobre plataformas <strong class="text-cyan-300 font-bold">CCR (Cloud Core Router)</strong> y <strong class="text-cyan-300 font-bold">CRS</strong>, optimizando el ruteo dinámico y políticas perimetrales.
+                                <span data-key="s1-grid-1">Configuración avanzada sobre plataformas <strong class="text-cyan-300 font-bold">CCR (Cloud Core Router)</strong> y <strong class="text-cyan-300 font-bold">CRS</strong>, optimizando el ruteo dinámico y políticas perimetrales.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Cisco Systems</strong>
-                                Despliegue de arquitecturas de red estructuradas bajo estándares globales de la industria, switches core y segmentación robusta.
+                                <span data-key="s1-grid-2">Despliegue de arquitecturas de red estructuradas bajo estándares globales de la industria, switches core y segmentación robusta.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Alta Disponibilidad</strong>
-                                Implementación de balanceo de cargas inteligente mediante <strong class="text-cyan-300 font-bold">PCC</strong> y sistemas de Failover automático ante caídas de proveedores.
+                                <span data-key="s1-grid-3">Implementación de balanceo de cargas inteligente mediante <strong class="text-cyan-300 font-bold">PCC</strong> y sistemas de Failover automático ante caídas de proveedores.</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-3">
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Enrutamiento Avanzado</strong>
-                            Configuración experta de routers especializados como <strong class="text-blue-600 font-bold">MikroTik (CCR/CRS)</strong> y <strong class="text-blue-600 font-bold">Cisco</strong>. Balanceo de carga inteligente mediante PCC (Per-Connection Classifier) y Failover automático para tolerar caídas de ISPs.
+                            <strong data-key="s1-b1-t" class="text-slate-900 block mb-1">Enrutamiento Avanzado</strong>
+                            <span data-key="s1-b1-d">Configuración experta de routers especializados como <strong class="text-blue-600 font-bold">MikroTik (CCR/CRS)</strong> y <strong class="text-blue-600 font-bold">Cisco</strong>. Balanceo de carga inteligente mediante PCC (Per-Connection Classifier) y Failover automático para tolerar caídas de ISPs.</span>
                         </div>
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Optimización de Infraestructura</strong>
-                            Diseño de redes desde cero, segmentación lógica estricta mediante <strong class="text-blue-600 font-bold">VLANs</strong> para aislar el tráfico crítico de la empresa, e implementación de telefonía IP integrada (<strong class="text-blue-600 font-bold">VoIP</strong>).
+                            <strong data-key="s1-b2-t" class="text-slate-900 block mb-1">Optimización de Infraestructura</strong>
+                            <span data-key="s1-b2-d">Diseño de redes desde cero, segmentación lógica estricta mediante <strong class="text-blue-600 font-bold">VLANs</strong> para aislar el tráfico crítico de la empresa, e implementación de telefonía IP integrada (<strong class="text-blue-600 font-bold">VoIP</strong>).</span>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- ACORDEÓN 2 -->
             <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
                 <button onclick="toggleAcordeon('detalles-seguridad', 'icono-seguridad')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
                     <div class="flex items-center space-x-4">
                         <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">🔒</span>
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900">Ciberseguridad Avanzada e Interconexión Militar</h3>
-                            <p class="text-xs text-slate-500 mt-0.5">Túneles encriptados, firewalls perimetrales y blindaje de activos.</p>
+                            <h3 data-key="s2-h3" class="text-xl font-bold text-slate-900">Ciberseguridad Avanzada e Interconexión Militar</h3>
+                            <p data-key="s2-p-sub" class="text-xs text-slate-500 mt-0.5">Túneles encriptados, firewalls perimetrales y blindaje de activos.</p>
                         </div>
                     </div>
                     <span id="icono-seguridad" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
                 </button>
-                
+
                 <div id="detalles-seguridad" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
-                    <p class="leading-relaxed">Auditoría y aseguramiento de redes locales y externas para mitigar brechas de seguridad, inyecciones de código o accesos no autorizados mediante hardware o software especializado.</p>
-                    
+                    <p data-key="s2-desc" class="leading-relaxed">Auditoría y aseguramiento de redes locales y externas para mitigar brechas de seguridad, inyecciones de código o accesos no autorizados mediante hardware o software especializado.</p>
+
                     <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
                         <h4 class="font-bold text-base tracking-wide flex items-center">
                             <span class="mr-2">🛡️</span> Especialización en Despliegue de VPNs Seguras:
@@ -105,47 +111,48 @@
                         <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">WireGuard</strong>
-                                Enfoque moderno de baja latencia, ideal para interconexiones internacionales multi-sitio de alta velocidad y consumo optimizado de recursos.
+                                <span data-key="s2-grid-1">Enfoque moderno de baja latencia, ideal para interconexiones internacionales multi-sitio de alta velocidad y consumo optimizado de recursos.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">IPsec / IKEv2</strong>
-                                Estándar robusto de la industria para túneles permanentes entre sucursales corporativas, con cifrado pesado de seguridad militar.
+                                <span data-key="s2-grid-2">Estándar robusto de la industria para túneles permanentes entre sucursales corporativas, con cifrado pesado de seguridad militar.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">OpenVPN / L2TP</strong>
-                                Soluciones versátiles para acceso remoto seguro de empleados independientes (Home Office) con políticas de autenticación estrictas.
+                                <span data-key="s2-grid-3">Soluciones versátiles para acceso remoto seguro de empleados independientes (Home Office) con políticas de autenticación estrictas.</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-3">
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Seguridad Perimetral Estricta</strong>
-                            Configuración de reglas de Firewall avanzadas por hardware o software, prevención de intrusos (IDS/IPS), y aislamiento total de redes administrativas y públicas.
+                            <strong data-key="s2-b1-t" class="text-slate-900 block mb-1">Seguridad Perimetral Estricta</strong>
+                            <span data-key="s2-b1-d">Configuración de reglas de Firewall avanzadas por hardware o software, prevención de intrusos (IDS/IPS), y aislamiento total de redes administrativas y públicas.</span>
                         </div>
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Sistemas de Monitoreo Cerrados</strong>
-                            Diseño y aseguramiento de sistemas de seguridad CCTV de circuito cerrado integrados a la red, blindados contra accesos externos maliciosos.
+                            <strong data-key="s2-b2-t" class="text-slate-900 block mb-1">Sistemas de Monitoreo Cerrados</strong>
+                            <span data-key="s2-b2-d">Diseño y aseguramiento de sistemas de seguridad CCTV de circuito cerrado integrados a la red, blindados contra accesos externos maliciosos.</span>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- ACORDEÓN 3 -->
             <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
                 <button onclick="toggleAcordeon('detalles-sistemas', 'icono-sistemas')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
                     <div class="flex items-center space-x-4">
                         <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">🐧</span>
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900">Virtualización, Servicios Cloud y Entornos Linux</h3>
-                            <p class="text-xs text-slate-500 mt-0.5">Migración a software libre, servidores redundantes y almacenamiento local centralizado.</p>
+                            <h3 data-key="s3-h3" class="text-xl font-bold text-slate-900">Virtualización, Servicios Cloud y Entornos Linux</h3>
+                            <p data-key="s3-p-sub" class="text-xs text-slate-500 mt-0.5">Migración a software libre, servidores redundantes y almacenamiento local centralizado.</p>
                         </div>
                     </div>
                     <span id="icono-sistemas" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
                 </button>
-                
+
                 <div id="detalles-sistemas" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
-                    <p class="leading-relaxed">Consolidación de servicios informáticos locales y remotos para reducir costos de infraestructura de hardware, incrementando al mismo tiempo la disponibilidad del software corporativo.</p>
-                    
+                    <p data-key="s3-desc" class="leading-relaxed">Consolidación de servicios informáticos locales y remotos para reducir costos de infraestructura de hardware, incrementando al mismo tiempo la disponibilidad del software corporativo.</p>
+
                     <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
                         <h4 class="font-bold text-base tracking-wide flex items-center">
                             <span class="mr-2">☁️</span> Ecosistema de Servidores e Infraestructura de Datos:
@@ -153,47 +160,48 @@
                         <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Linux Corporativo</strong>
-                                Despliegue y tuning de entornos basados en <strong class="text-cyan-300 font-bold">Fedora Workstation</strong>, <strong class="text-cyan-300 font-bold">Mint</strong> y servidores <strong class="text-cyan-300 font-bold">Debian/AlmaLinux</strong> de alta disponibilidad.
+                                <span data-key="s3-grid-1">Despliegue y tuning de entornos basados en <strong class="text-cyan-300 font-bold">Fedora Workstation</strong>, <strong class="text-cyan-300 font-bold">Mint</strong> y servidores <strong class="text-cyan-300 font-bold">Debian/AlmaLinux</strong> de alta disponibilidad.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Hipervisores KVM / VMware</strong>
-                                Consolidación de hardware físico mediante virtualización robusta con segmentación de recursos redundantes y tolerancia a fallos.
+                                <span data-key="s3-grid-2">Consolidación de hardware físico mediante virtualización robusta con segmentación de recursos redundantes y tolerancia a fallos.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Almacenamiento NAS & Backup</strong>
-                                Arquitecturas Cloud Privadas y almacenamiento en red centralizado para la protección inalterable de activos lógicos.
+                                <span data-key="s3-grid-3">Arquitecturas Cloud Privadas and almacenamiento en red centralizado para la protección inalterable de activos lógicos.</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-3">
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Administración y Migración Linux</strong>
-                            Especialista en la migración completa de estaciones de trabajo corporativas hacia entornos Linux optimizados (<strong class="text-blue-600 font-bold">Fedora / Mint / Debian Server</strong>), endureciendo la seguridad del sistema y ampliando la vida útil del hardware.
+                            <strong data-key="s3-b1-t" class="text-slate-900 block mb-1">Administración y Migración Linux</strong>
+                            <span data-key="s3-b1-d">Especialista en la migración completa de estaciones de trabajo corporativas hacia entornos Linux optimizados (<strong class="text-blue-600 font-bold">Fedora / Mint / Debian Server</strong>), endureciendo la seguridad del sistema y ampliando la vida útil del hardware.</span>
                         </div>
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Virtualización y Almacenamiento NAS/Cloud</strong>
-                            Montaje de servidores virtuales redundantes (<strong class="text-blue-600 font-bold">KVM, VMware</strong>) y configuración de arquitecturas de almacenamiento en red tipo NAS o Cloud Privado para asegurar el respaldo inalterable de los datos de la empresa.
+                            <strong data-key="s3-b2-t" class="text-slate-900 block mb-1">Virtualización y Almacenamiento NAS/Cloud</strong>
+                            <span data-key="s3-b2-d">Montaje de servidores virtuales redundantes (<strong class="text-blue-600 font-bold">KVM, VMware</strong>) y configuración de arquitecturas de almacenamiento en red tipo NAS o Cloud Privado para asegurar el respaldo inalterable de los datos de la empresa.</span>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- ACORDEÓN 4 -->
             <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden transition-all">
                 <button onclick="toggleAcordeon('detalles-industrial', 'icono-industrial')" class="w-full text-left p-6 flex justify-between items-center hover:bg-slate-50/80 transition-colors">
                     <div class="flex items-center space-x-4">
                         <span class="text-2xl bg-blue-50 p-3 rounded-xl text-blue-600 border border-blue-100">⚙️</span>
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900">Automatización Industrial e Ingeniería Inversa</h3>
+                            <h3 data-key="s4-h3" class="text-xl font-bold text-slate-900">Automatización Industrial e Ingeniería Inversa</h3>
                             <p class="text-xs text-slate-500 mt-0.5">Análisis de hardware a bajo nivel y soporte de TI avanzado.</p>
                         </div>
                     </div>
                     <span id="icono-industrial" class="text-slate-400 font-bold text-xl transform transition-transform duration-300">➔</span>
                 </button>
-                
+
                 <div id="detalles-industrial" class="hidden p-6 border-t border-slate-100 bg-slate-50/50 space-y-4 text-sm text-slate-600">
-                    <p class="leading-relaxed">Soporte TI especializado e intervenciones complejas a nivel de hardware electrónico y sistemas embebidos industriales.</p>
-                    
+                    <p data-key="s4-desc" class="leading-relaxed">Soporte TI especializado e intervenciones complejas a nivel de hardware electrónico y sistemas embebidos industriales.</p>
+
                     <div class="bg-gradient-to-br from-blue-600 to-blue-800 text-white p-5 rounded-xl shadow-md space-y-3">
                         <h4 class="font-bold text-base tracking-wide flex items-center">
                             <span class="mr-2">🔬</span> Ingeniería de Hardware y Continuidad Global:
@@ -201,27 +209,27 @@
                         <div class="grid sm:grid-cols-3 gap-3 text-xs text-blue-50">
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Análisis a Bajo Nivel</strong>
-                                Diagnóstico y reparación profunda de placas base, controladores lógicos y microcomponentes electrónicos sin esquemáticos oficiales.
+                                <span data-key="s4-grid-1">Diagnóstico y reparación profunda de placas base, controladores lógicos y microcomponentes electrónicos sin esquemáticos oficiales.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Sistemas Embebidos</strong>
-                                Optimización e ingeniería inversa sobre firmware y hardware industrial para extender el ciclo de vida operativo de la maquinaria.
+                                <span data-key="s4-grid-2">Optimización e ingeniería inversa sobre firmware y hardware industrial para extender el ciclo de vida operativo de la maquinaria.</span>
                             </div>
                             <div class="bg-white/10 p-3 rounded-lg border border-white/10">
                                 <strong class="text-white block mb-0.5 font-bold">Soporte Remoto 24/7</strong>
-                                Gestión centralizada de incidentes críticos en servidores e infraestructura de red con disponibilidad global para misiones críticas.
+                                <span data-key="s4-grid-3">Gestión centralizada de incidentes críticos en servidores e infraestructura de red con disponibilidad global para misiones críticas.</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="grid sm:grid-cols-2 gap-3">
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Ingeniería Inversa de Hardware</strong>
-                            Diagnóstico y análisis avanzado a nivel físico de componentes electrónicos, placas base y controladores lógicos para optimizar o reparar sistemas sin documentación oficial del fabricante.
+                            <strong data-key="s4-b1-t" class="text-slate-900 block mb-1">Ingeniería Inversa de Hardware</strong>
+                            <span data-key="s4-b1-d">Diagnóstico y análisis avanzado a nivel físico de componentes electrónicos, placas base y controladores lógicos para optimizar o reparar sistemas sin documentación oficial del fabricante.</span>
                         </div>
                         <div class="bg-white p-3 rounded-xl border border-slate-200/60 shadow-sm">
-                            <strong class="text-slate-900 block mb-1">Soporte TI Remoto Global</strong>
-                            Gestión, monitoreo y resolución de incidencias complejas de servidores e infraestructura de red de manera completamente remota con disponibilidad orientada a la continuidad operativa <strong class="text-blue-600 font-bold">24/7</strong>.
+                            <strong data-key="s4-b2-t" class="text-slate-900 block mb-1">Soporte TI Remoto Global</strong>
+                            <span data-key="s4-b2-d">Gestión, monitoreo y resolución de incidencias complejas de servidores e infraestructura de red de manera completamente remota con disponibilidad orientada a la continuidad operativa <strong class="text-blue-600 font-bold">24/7</strong>.</span>
                         </div>
                     </div>
                 </div>
@@ -230,9 +238,9 @@
         </div>
     </main>
 
-    <footer class="p-8 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
+    <footer data-key="footer-text" class="p-8 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
         Jefferson Seijas © 2026 | Desarrollado bajo una mentalidad de mejora continua y filosofía estoica.
-        </footer>
+    </footer>
 
     <script>
         function toggleAcordeon(idDesplegable, idIcono) {
@@ -247,6 +255,141 @@
                 icono.classList.remove('rotate-90', 'text-cyan-600');
             }
         }
+
+        // DICCIONARIO INTERNO INTEGRADO PARA SERVICIOS.HTML
+        const translations = {
+            "es": {
+                "nav-sub": "| Ingeniería Electrónica & Soluciones TI",
+                "nav-servicios": "Servicios",
+                "nav-catalogo": "Catálogo de Trabajos",
+                "nav-contacto": "Contacto / Cotizar",
+                "footer-text": "Jefferson Seijas © 2026 | Desarrollado bajo una mentalidad de mejora continua y filosofía estoica.",
+                "serv-badge": "Portafolio de Servicios Técnicos",
+                "serv-title": "Soluciones de Ingeniería a la Medida",
+                "serv-subtitle": "Descubre en detalle mis capacidades de despliegue, aseguramiento e ingeniería inversa para ecosistemas de TI corporativos e industriales.",
+                
+                "s1-h3": "Diseño y Arquitectura de Redes de Alto Rendimiento",
+                "s1-p-sub": "Ruteo especializado, conectividad avanzada y alta disponibilidad.",
+                "s1-desc": "Implementación de infraestructuras lógicas estables destinadas a soportar alta demanda de tráfico corporativo, garantizando la escalabilidad de la red sin degradación del servicio.",
+                "s1-grid-1": "Configuración avanzada sobre plataformas CCR (Cloud Core Router) y CRS, optimizando el ruteo dinámico y políticas perimetrales.",
+                "s1-grid-2": "Despliegue de arquitecturas de red estructuradas bajo estándares globales de la industria, switches core y segmentación robusta.",
+                "s1-grid-3": "Implementación de balanceo de cargas inteligente mediante PCC y sistemas de Failover automático ante caídas de proveedores.",
+                "s1-b1-t": "Enrutamiento Avanzado",
+                "s1-b1-d": "Configuración experta de routers especializados como MikroTik (CCR/CRS) y Cisco. Balanceo de carga inteligente mediante PCC (Per-Connection Classifier) y Failover automático para tolerar caídas de ISPs.",
+                "s1-b2-t": "Optimización de Infraestructura",
+                "s1-b2-d": "Diseño de redes desde cero, segmentación lógica estricta mediante VLANs para aislar el tráfico crítico de la empresa, e implementación de telefonía IP integrada (VoIP).",
+
+                "s2-h3": "Ciberseguridad Avanzada e Interconexión Militar",
+                "s2-p-sub": "Túneles encriptados, firewalls perimetrales y blindaje de activos.",
+                "s2-desc": "Auditoría y aseguramiento de redes locales y externas para mitigar brechas de seguridad, inyecciones de código o accesos no autorizados mediante hardware o software especializado.",
+                "s2-grid-1": "Enfoque moderno de baja latencia, ideal para interconexiones internacionales multi-sitio de alta velocidad y consumo optimizado de recursos.",
+                "s2-grid-2": "Estándar robusto de la industria para túneles permanentes entre sucursales corporativas, con cifrado pesado de seguridad militar.",
+                "s2-grid-3": "Soluciones versátiles para acceso remoto seguro de empleados independientes (Home Office) con políticas de autenticación estrictas.",
+                "s2-b1-t": "Seguridad Perimetral Estricta",
+                "s2-b1-d": "Configuración de reglas de Firewall avanzadas por hardware o software, prevención de intrusos (IDS/IPS), y aislamiento total de redes administrativas y públicas.",
+                "s2-b2-t": "Sistemas de Monitoreo Cerrados",
+                "s2-b2-d": "Diseño y aseguramiento de sistemas de seguridad CCTV de circuito cerrado integrados a la red, blindados contra accesos externos maliciosos.",
+
+                "s3-h3": "Virtualización, Servicios Cloud y Entornos Linux",
+                "s3-p-sub": "Migración a software libre, servidores redundantes y almacenamiento local centralizado.",
+                "s3-desc": "Consolidación de servicios informáticos locales y remotos para reducir costos de infraestructura de hardware, incrementando al mismo tiempo la disponibilidad del software corporativo.",
+                "s3-grid-1": "Despliegue y tuning de entornos basados en Fedora Workstation, Mint y servidores Debian/AlmaLinux de alta disponibilidad.",
+                "s3-grid-2": "Consolidación de hardware físico mediante virtualización robusta con segmentación de recursos redundantes y tolerancia a fallos.",
+                "s3-grid-3": "Arquitecturas Cloud Privadas y almacenamiento en red centralizado para la protección inalterable de activos lógicos.",
+                "s3-b1-t": "Administración y Migración Linux",
+                "s3-b1-d": "Especialista en la migración completa de estaciones de trabajo corporativas hacia entornos Linux optimizados (Fedora / Mint / Debian Server), endureciendo la seguridad del sistema y ampliando la vida útil del hardware.",
+                "s3-b2-t": "Virtualización y Almacenamiento NAS/Cloud",
+                "s3-b2-d": "Montaje de servidores virtuales redundantes (KVM, VMware) y configuración de arquitecturas de almacenamiento en red tipo NAS o Cloud Privado para asegurar el respaldo inalterable de los datos de la empresa.",
+
+                "s4-h3": "Automatización Industrial e Ingeniería Inversa",
+                "s4-p-sub": "Análisis de hardware a bajo nivel y soporte de TI avanzado.",
+                "s4-desc": "Soporte TI especializado e intervenciones complejas a nivel de hardware electrónico y sistemas embebidos industriales.",
+                "s4-grid-1": "Diagnóstico y reparación profunda de placas base, controladores lógicos y microcomponentes electrónicos sin esquemáticos oficiales.",
+                "s4-grid-2": "Optimización e ingeniería inversa sobre firmware y hardware industrial para extender el ciclo de vida operativo de la maquinaria.",
+                "s4-grid-3": "Gestión centralizada de incidentes críticos en servidores e infraestructura de red con disponibilidad global para misiones críticas.",
+                "s4-b1-t": "Ingeniería Inversa de Hardware",
+                "s4-b1-d": "Diagnóstico y análisis avanzado a nivel físico de componentes electrónicos, placas base y controladores lógicos para optimizar o reparar sistemas sin documentación oficial del fabricante.",
+                "s4-b2-t": "Ingeniería Inversa de Hardware",
+                "s4-b2-d": "Diagnóstico y análisis avanzado a nivel físico de componentes electrónicos, placas base y controladores lógicos para optimizar o reparar sistemas sin documentación oficial del fabricante."
+            },
+            "en": {
+                "nav-sub": "| Electronics Engineering & IT Solutions",
+                "nav-servicios": "Services",
+                "nav-catalogo": "Project Catalog",
+                "nav-contacto": "Contact / Get a Quote",
+                "footer-text": "Jefferson Seijas © 2026 | Developed under a continuous improvement mindset and Stoic philosophy.",
+                "serv-badge": "Technical Services Portfolio",
+                "serv-title": "Tailored Engineering Solutions",
+                "serv-subtitle": "Explore my deep deployment, hardening, and reverse-engineering capabilities for enterprise and industrial IT environments.",
+                
+                "s1-h3": "High-Performance Network Architecture & Design",
+                "s1-p-sub": "Specialized routing, advanced connectivity, and high availability.",
+                "s1-desc": "Implementation of stable logical infrastructures designed to support high enterprise traffic demands, ensuring network scalability with zero service degradation.",
+                "s1-grid-1": "Advanced configuration on CCR (Cloud Core Router) and CRS platforms, optimizing dynamic routing and perimeter policies.",
+                "s1-grid-2": "Deployment of structured network architectures under global industry standards, core switches, and robust segmentation.",
+                "s1-grid-3": "Implementation of intelligent load balancing utilizing PCC alongside automated Failover systems against ISP dropouts.",
+                "s1-b1-t": "Advanced Routing",
+                "s1-b1-d": "Expert configuration of specialized routers such as MikroTik (CCR/CRS) and Cisco. Intelligent load balancing using PCC (Per-Connection Classifier) and automatic Failover to absorb ISP failures.",
+                "s1-b2-t": "Infrastructure Optimization",
+                "s1-b2-d": "From-scratch network design, strict logical segmentation using VLANs to isolate critical enterprise traffic, and deployment of integrated IP Telephony (VoIP).",
+
+                "s2-h3": "Advanced Cybersecurity & Military-Grade Interconnection",
+                "s2-p-sub": "Encrypted tunnels, perimeter firewalls, and asset hardening.",
+                "s2-desc": "Auditing and hardening of local and wide networks to mitigate security breaches, code injections, or unauthorized access utilizing specialized hardware and software.",
+                "s2-grid-1": "Modern low-latency approach, ideal for multi-site international interconnections with high speeds and optimized resource overhead.",
+                "s2-grid-2": "Industry robust standard for permanent tunnels between corporate branches, featuring heavy military-grade encryption.",
+                "s2-grid-3": "Versatile solutions for secure remote access for independent or distributed staff (Home Office) with strict authentication policies.",
+                "s2-b1-t": "Strict Perimeter Security",
+                "s2-b1-d": "Advanced hardware or software Firewall rule configurations, intrusion prevention (IDS/IPS), and complete isolation of administrative and public networks.",
+                "s2-b2-t": "Closed Monitoring Systems",
+                "s2-b2-d": "Design and hardening of network-integrated CCTV security systems, shielded against malicious external access attempts.",
+
+                "s3-h3": "Virtualization, Cloud Services & Linux Environments",
+                "s3-p-sub": "Migration to open-source software, redundant servers, and centralized local storage.",
+                "s3-desc": "Consolidation of local and remote IT services to cut hardware infrastructure overhead while expanding corporate software uptime.",
+                "s3-grid-1": "Deployment and tuning of environments based on Fedora Workstation, Mint, and high-availability Debian/AlmaLinux servers.",
+                "s3-grid-2": "Physical hardware consolidation utilizing robust virtualization with redundant resource allocation and fault tolerance.",
+                "s3-grid-3": "Private Cloud architectures and network-attached centralized storage for unalterable logical asset protection.",
+                "s3-b1-t": "Linux Administration & Migration",
+                "s3-b1-d": "Specialist in full migration of enterprise workstations to optimized Linux environments (Fedora / Mint / Debian Server), hardening system security and extending hardware lifecycle.",
+                "s3-b2-t": "Virtualization & NAS/Cloud Storage",
+                "s3-b2-d": "Setup of redundant virtual servers (KVM, VMware) and configuration of NAS or Private Cloud storage architectures to ensure seamless backup of corporate records.",
+
+                "s4-h3": "Industrial Automation & Hardware Reverse Engineering",
+                "s4-p-sub": "Low-level hardware analysis and advanced IT support.",
+                "s4-desc": "Specialized IT support and complex physical-level interventions on electronic hardware and industrial embedded systems.",
+                "s4-grid-1": "Deep diagnosis and board-level repair of motherboards, logical controllers, and electronic microcomponents without official schematics.",
+                "s4-grid-2": "Optimization and reverse engineering on industrial firmware and hardware to extend machinery operational cycles.",
+                "s4-grid-3": "Centralized critical incident management on servers and network infrastructure with global availability for mission-critical events.",
+                "s4-b1-t": "Hardware Reverse Engineering",
+                "s4-b1-d": "Advanced physical diagnosis and analysis of electronic components, motherboards, and logical controllers to optimize or repair systems without official manufacturer blueprints.",
+                "s4-b2-t": "GLOBAL REMOTE IT SUPPORT",
+                "s4-b2-d": "Management, monitoring, and resolution of complex server and network infrastructure incidents fully remotely with availability geared towards 24/7 business continuity."
+            }
+        };
+
+        let currentLang = localStorage.getItem('preferredLang') || 'es';
+        const langToggleBtn = document.getElementById('language-toggle');
+
+        function applyTranslations() {
+            langToggleBtn.textContent = currentLang === 'es' ? 'EN' : 'ES';
+            document.documentElement.lang = currentLang;
+
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang] && translations[currentLang][key]) {
+                    element.textContent = translations[currentLang][key];
+                }
+            });
+        }
+
+        applyTranslations();
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+            localStorage.setItem('preferredLang', currentLang);
+            applyTranslations();
+        });
     </script>
 
 </body>

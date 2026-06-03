@@ -13,422 +13,312 @@
 <a href="index.html" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 px-3 py-2 rounded-lg font-black tracking-wider text-sm shadow-lg shadow-cyan-500/20 transition-colors block">
 JS CONSULTING
 </a>
-<span class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
+<span data-key="nav-sub" class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
 </div>
-<div class="flex items-center space-x-6 font-semibold text-sm">
-<a href="Servicios.html" class="text-slate-300 hover:text-cyan-400 transition-colors">Servicios</a>
-<a href="catalogo_de_trabajos.html" class="text-cyan-400 underline">Catálogo de Trabajos</a>
-<a href="contacto.html" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 px-4 py-2 rounded-lg transition-all">
+<div class="flex items-center space-x-4 font-semibold text-sm">
+<a href="Servicios.html" data-key="nav-servicios" class="text-slate-300 hover:text-cyan-400 transition-colors">Servicios</a>
+<a href="catalogo_de_trabajos.html" data-key="nav-catalogo" class="text-cyan-400 underline">Catálogo de Trabajos</a>
+<a href="contacto.html" data-key="nav-contacto" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 px-4 py-2 rounded-lg transition-all">
 Contacto / Cotizar
 </a>
+<!-- BOTÓN SELECTOR DE IDIOMA GLOBAL -->
+<button id="language-toggle" class="bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg font-bold transition-all text-xs tracking-wider uppercase">
+EN
+</button>
 </div>
 </nav>
 
 <main class="container mx-auto max-w-5xl py-16 px-6 flex-grow space-y-12">
 <div class="text-center max-w-2xl mx-auto">
-<h1 class="text-3xl font-black text-slate-900 mb-3">Catálogo de Trabajos Realizados</h1>
-<p class="text-slate-600 text-sm">Auditorías forenses, mitigación de ataques perimetrales, ingeniería de campo y soluciones VoIP.</p>
+<h1 data-key="cat-title" class="text-3xl font-black text-slate-900 mb-3">Catálogo de Trabajos Realizados</h1>
+<p data-key="cat-subtitle" class="text-slate-600 text-sm">Auditorías forenses, mitigación de ataques perimetrales, ingeniería de campo y soluciones VoIP.</p>
 </div>
 
 <div class="grid md:grid-cols-2 gap-8">
+<!-- PROYECTO 1 -->
 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between p-6 hover:shadow-md transition-shadow">
 <div class="space-y-3">
-<span class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Infraestructura de Red</span>
-<h3 class="text-xl font-bold text-slate-900">Arquitectura VPN Multi-Site Internacional</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Interconexión segura de sedes corporativas mediante túneles WireGuard de baja latencia sobre hardware MikroTik.</p>
+<span data-key="proj-1-tag" class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Infraestructura de Red</span>
+<h3 data-key="proj-1-title" class="text-xl font-bold text-slate-900">Arquitectura VPN Multi-Site Internacional</h3>
+<p data-key="proj-1-desc" class="text-sm text-slate-600 leading-relaxed">Interconexión segura de sedes corporativas mediante túneles WireGuard de baja latencia sobre hardware MikroTik.</p>
 </div>
-<div class="pt-6"><button onclick="toggleModal('modal-vpn')" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
+<div class="pt-6"><button onclick="toggleModal('modal-vpn')" data-key="btn-details" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
 </div>
 
+<!-- PROYECTO 2 -->
 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between p-6 hover:shadow-md transition-shadow">
 <div class="space-y-3">
-<span class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Sistemas & Virtualización</span>
-<h3 class="text-xl font-bold text-slate-900">Implementación de Servicios de Alojamiento Corporativo</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Consolidación de infraestructura física HP/IBM utilizando hipervisores VMware ESXi 5 y ESXi 7 con enmascaramiento NAT.</p>
+<span data-key="proj-2-tag" class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Sistemas & Virtualización</span>
+<h3 data-key="proj-2-title" class="text-xl font-bold text-slate-900">Implementación de Servicios de Alojamiento Corporativo</h3>
+<p data-key="proj-2-desc" class="text-sm text-slate-600 leading-relaxed">Consolidación de infraestructura física HP/IBM utilizando hipervisores VMware ESXi 5 y ESXi 7 con enmascaramiento NAT.</p>
 </div>
-<div class="pt-6"><button onclick="toggleModal('modal-proyecto2')" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
+<div class="pt-6"><button onclick="toggleModal('modal-proyecto2')" data-key="btn-details" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
 </div>
 
+<!-- PROYECTO 3 (Optimizado) -->
 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between p-6 hover:shadow-md transition-shadow">
 <div class="space-y-3">
-<span class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Ingeniería de Campo</span>
-<h3 class="text-xl font-bold text-slate-900">Optimización y Reorganización Estructural de Rack - Sede Perdomo</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Mantenimiento correctivo físico, peinado, limpieza y optimización de flujos térmicos en rack de telecomunicaciones corporativo.</p>
+<span data-key="proj-3-tag" class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Ingeniería de Campo</span>
+<h3 data-key="proj-3-title" class="text-xl font-bold text-slate-900">Optimización e Ingeniería de Infraestructura Estructural de Rack de Telecomunicaciones</h3>
+<p data-key="proj-3-desc" class="text-sm text-slate-600 leading-relaxed">Mantenimiento correctivo físico, peinado, limpieza y optimización de flujos térmicos en rack de telecomunicaciones corporativo.</p>
 </div>
-<div class="pt-6"><button onclick="toggleModal('modal-rack-perdomo')" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
+<div class="pt-6"><button onclick="toggleModal('modal-rack-perdom')" data-key="btn-details" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
 </div>
 
+<!-- PROYECTO 4 (Optimizado) -->
 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between p-6 hover:shadow-md transition-shadow">
 <div class="space-y-3">
-<span class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Ciberseguridad & VoIP Audits</span>
-<h3 class="text-xl font-bold text-slate-900">Recuperación Forense de Infraestructura Comprometida - Sede Castilla</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Netinstall correctivo en MikroTik, auditoría ante intrusiones, rescate de claves Issabel desde GRUB y reconfiguración de telefonía SIP 1:1.</p>
+<span data-key="proj-4-tag" class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Ciberseguridad & VoIP Audits</span>
+<h3 data-key="proj-4-title" class="text-xl font-bold text-slate-900">Recuperación Forense y Hardening de Infraestructura Crítica Comprometida</h3>
+<p data-key="proj-4-desc" class="text-sm text-slate-600 leading-relaxed">Netinstall correctivo en MikroTik, auditoría ante intrusiones, rescate de claves Issabel desde GRUB y reconfiguración de telefonía SIP 1:1.</p>
 </div>
-<div class="pt-6"><button onclick="toggleModal('modal-sede-castilla')" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
+<div class="pt-6"><button onclick="toggleModal('modal-sede-castilla')" data-key="btn-details" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
 </div>
 
+<!-- PROYECTO 5 -->
 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between p-6 hover:shadow-md transition-shadow">
 <div class="space-y-3">
-<span class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Seguridad Perimetral</span>
-<h3 class="text-xl font-bold text-slate-900">Mitigación de Ataques e Intrusiones de Alto Impacto (IPSec/L2TP)</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Hardening de Router Core RB1100AHx4 bajo colapso (89% CPU) por fuerza bruta. Migración perimetral controlada hacia WireGuard.</p>
+<span data-key="proj-5-tag" class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Seguridad Perimetral</span>
+<h3 data-key="proj-5-title" class="text-xl font-bold text-slate-900">Mitigación de Ataques e Intrusiones de Alto Impacto (IPSec/L2TP)</h3>
+<p data-key="proj-5-desc" class="text-sm text-slate-600 leading-relaxed">Hardening de Router Core RB1100AHx4 bajo colapso (89% CPU) por fuerza bruta. Migración perimetral controlada hacia WireGuard.</p>
 </div>
-<div class="pt-6"><button onclick="toggleModal('modal-mitigacion-ataques')" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
+<div class="pt-6"><button onclick="toggleModal('modal-mitigacion-ataques')" data-key="btn-details" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
 </div>
 
+<!-- PROYECTO 6 (Optimizado) -->
 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between p-6 hover:shadow-md transition-shadow">
 <div class="space-y-3">
-<span class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Despliegues Llave en Mano</span>
-<h3 class="text-xl font-bold text-slate-900">Diseño, Conectividad e Instalación Integral de Sede Call Center</h3>
-<p class="text-sm text-slate-600 leading-relaxed">Despliegue integral express (1 semana): acometidas eléctricas, cableado estructurado, configuración MikroTik y troncales VoIP Issabel.</p>
+<span data-key="proj-6-tag" class="text-xs font-bold text-cyan-600 uppercase bg-cyan-50 px-2.5 py-1 rounded-md border border-cyan-200/50">Despliegues Llave en Mano</span>
+<h3 data-key="proj-6-title" class="text-xl font-bold text-slate-900">Diseño, Conectividad e Instalación Integral de Infraestructura para Call Center</h3>
+<p data-key="proj-6-desc" class="text-sm text-slate-600 leading-relaxed">Despliegue integral express (1 semana): acometidas eléctricas, cableado estructurado, configuración MikroTik y troncales VoIP Issabel.</p>
 </div>
-<div class="pt-6"><button onclick="toggleModal('modal-callcenter-ibague')" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
+<div class="pt-6"><button onclick="toggleModal('modal-callcenter-ibague')" data-key="btn-details" class="w-full text-center bg-slate-900 hover:bg-cyan-600 hover:text-slate-950 text-white font-bold py-2.5 px-4 rounded-xl text-sm transition-colors">Ver Detalles y Evidencias ➔</button></div>
 </div>
+</div> 
+</main>
 
-</div> </main>
-
+<!-- MODAL 1 // WIREGUARD -->
 <div id="modal-vpn" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center">
 <div class="bg-slate-900 text-slate-100 w-screen h-screen flex flex-col overflow-hidden">
 <div class="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-950">
 <div>
-<span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Infraestructura de Red</span>
-<h2 class="text-2xl font-black text-white tracking-tight mt-1">Despliegue e Interconexión VPN WireGuard</h2>
+<span data-key="m1-meta" class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Infraestructura de Red</span>
+<h2 data-key="m1-h2" class="text-2xl font-black text-white tracking-tight mt-1">Despliegue e Interconexión VPN WireGuard</h2>
 </div>
 <button onclick="toggleModal('modal-vpn')" class="text-slate-400 hover:text-cyan-400 font-bold text-2xl p-2 transition-colors">✕</button>
 </div>
 <div class="p-8 flex-grow overflow-y-auto space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 items-start">
 <div class="space-y-6 lg:col-span-1">
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">La organización requería centralizar sus servicios de bases de datos y telefonía IP entre su sede principal y sucursales, mitigando riesgos de interceptación de tráfico en la red pública.</p>
+<h4 data-key="m-req-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
+<p data-key="m1-req-p" class="text-sm text-white font-medium leading-relaxed">La organización requería centralizar sus servicios de bases de datos y telefonía IP entre su sede principal y sucursales, mitigando riesgos de interceptación de tráfico en la red pública.</p>
 </div>
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Configuración de enrutadores de borde <strong class="text-cyan-300 font-bold">MikroTik</strong> corriendo RouterOS v7. Implementación de un backbone VPN basado en <strong class="text-cyan-300 font-bold">WireGuard</strong>, optimizando las tablas de ruteo y aplicando reglas estrictas en el Firewall (Filter Rules).</p>
+<h4 data-key="m-sol-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
+<p data-key="m1-sol-p" class="text-sm text-white font-medium leading-relaxed">Configuración de enrutadores de borde <strong class="text-cyan-300 font-bold">MikroTik</strong> corriendo RouterOS v7. Implementación de un backbone VPN basado en <strong class="text-cyan-300 font-bold">WireGuard</strong>, optimizando las tablas de ruteo y aplicando reglas estrictas en el Firewall (Filter Rules).</p>
 </div>
 </div>
 <div class="lg:col-span-2 space-y-6">
 <div class="w-full bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-2xl space-y-4">
-<h4 class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal</h4>
+<h4 data-key="m-main-evidence" class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal</h4>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in">
 <img src="assets/imagenes/diagrama-vpn.png" alt="Topología de Red" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 <div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 1.2 // Conectividad</h5>
+<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 1.2 // Connectivity</h5>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/connectivity.png" alt="Conectividad" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
 </div>
 <div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 1.3 // Telefonía Issabel</h5>
+<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 1.3 // Issabel VoIP</h5>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/issabel.png" alt="Issabel" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
 </div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 1.4 // Diagnóstico ICMP</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/ping-office.png" alt="Ping" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 1.5 // Recursos</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/resources.png" alt="Recursos" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
 </div>
 </div>
 </div>
-</div>
-<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-vpn')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
+<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-vpn')" data-key="btn-close-console" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
 </div>
 </div>
 
+<!-- MODAL 2 // VMWARE -->
 <div id="modal-proyecto2" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center">
 <div class="bg-slate-900 text-slate-100 w-screen h-screen flex flex-col overflow-hidden">
 <div class="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-950">
 <div>
-<span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Virtualización & Cloud</span>
-<h2 class="text-2xl font-black text-white tracking-tight mt-1">Implementación de Servicios de Alojamiento Corporativo</h2>
+<span data-key="m2-meta" class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Virtualización & Cloud</span>
+<h2 data-key="m2-h2" class="text-2xl font-black text-white tracking-tight mt-1">Implementación de Servicios de Alojamiento Corporativo</h2>
 </div>
 <button onclick="toggleModal('modal-proyecto2')" class="text-slate-400 hover:text-cyan-400 font-bold text-2xl p-2 transition-colors">✕</button>
 </div>
 <div class="p-8 flex-grow overflow-y-auto space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 items-start">
 <div class="space-y-6 lg:col-span-1">
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Centralización, consolidación y aislamiento lógico de entornos de producción críticos. Se requería migrar servicios legados y desplegar instancias de cómputo tolerantes a fallas sobre hardware de servidor independiente.</p>
+<h4 data-key="m-req-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
+<p data-key="m2-req-p" class="text-sm text-white font-medium leading-relaxed">Centralización, consolidación y aislamiento lógico de entornos de producción críticos. Se requería migrar servicios legados y desplegar instancias de cómputo tolerantes a fallas sobre hardware de servidor independiente.</p>
 </div>
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Configuración de hipervisores <strong class="text-cyan-300 font-bold">VMware ESXi 5 y ESXi 7</strong> distribuidos estratégicamente sobre infraestructura física <strong class="text-cyan-300 font-bold">HP Enterprise</strong> e <strong class="text-cyan-300 font-bold">IBM</strong>. Segmentación perimetral mediante políticas de ruteo estricto y reglas de enmascaramiento <strong class="text-cyan-300 font-bold">NAT Servers</strong> en core layer.</p>
+<h4 data-key="m-sol-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
+<p data-key="m2-sol-p" class="text-sm text-white font-medium leading-relaxed">Configuración de hipervisores <strong class="text-cyan-300 font-bold">VMware ESXi 5 y ESXi 7</strong> distribuidos estratégicamente sobre infraestructura física <strong class="text-cyan-300 font-bold">HP Enterprise</strong> e <strong class="text-cyan-300 font-bold">IBM</strong>. Segmentación perimetral mediante políticas de ruteo estricto y reglas de enmascaramiento <strong class="text-cyan-300 font-bold">NAT Servers</strong> en core layer.</p>
 </div>
 </div>
 <div class="lg:col-span-2 space-y-6">
 <div class="w-full bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-2xl space-y-4">
-<h4 class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Arquitectura del Ecosistema</h4>
+<h4 data-key="m2-main-evidence" class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Arquitectura del Ecosistema</h4>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in">
 <img src="assets/imagenes/diagrama_servidores.png" alt="Diagrama Servidores" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
 </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 2.2 // NAT Servers</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/nat_servers.png" alt="NAT Servers" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 2.3 // VMware ESXi 7 Core</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/esxi7.png" alt="ESXi 7" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 2.4 // Ecosistema ESXi 5 Legacy</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/esxi5.png" alt="ESXi 5" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 2.5 // Monitor de Recursos HP</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/caracteristicashp.png" alt="HP Metrics" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 2.6 // Monitor de Recursos IBM</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/caracteristicasibm.png" alt="IBM Metrics" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 2.7 // Wisdom Platform Metrics</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/wisdom.png" alt="Wisdom Core" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
 </div>
 </div>
-</div>
-</div>
-<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-proyecto2')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
+<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-proyecto2')" data-key="btn-close-console" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
 </div>
 </div>
 
-<div id="modal-rack-perdomo" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center">
+<!-- MODAL 3 // RACK -->
+<div id="modal-rack-perdom" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center">
 <div class="bg-slate-900 text-slate-100 w-screen h-screen flex flex-col overflow-hidden">
 <div class="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-950">
 <div>
-<span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Ingeniería de Campo</span>
-<h2 class="text-2xl font-black text-white tracking-tight mt-1">Optimización y Reorganización Estructural de Rack - Sede Perdomo</h2>
+<span data-key="m3-meta" class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Ingeniería de Campo</span>
+<h2 data-key="m3-h2" class="text-2xl font-black text-white tracking-tight mt-1">Optimización e Ingeniería de Infraestructura Estructural de Rack de Telecomunicaciones</h2>
 </div>
-<button onclick="toggleModal('modal-rack-perdomo')" class="text-slate-400 hover:text-cyan-400 font-bold text-2xl p-2 transition-colors">✕</button>
+<button onclick="toggleModal('modal-rack-perdom')" class="text-slate-400 hover:text-cyan-400 font-bold text-2xl p-2 transition-colors">✕</button>
 </div>
 <div class="p-8 flex-grow overflow-y-auto space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 items-start">
 <div class="space-y-6 lg:col-span-1">
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">El estado inicial del rack presentaba desorganización crítica de cableado estructural, acumulación de partículas térmicamente obstructivas y riesgo latente de desconexión.</p>
+<h4 data-key="m-req-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
+<p data-key="m3-req-p" class="text-sm text-white font-medium leading-relaxed">El estado inicial del rack presentaba desorganización crítica de cableado estructural, acumulación de partículas térmicamente obstructivas y riesgo latente de desconexión.</p>
 </div>
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Ejecución de mantenimiento preventivo y correctivo físico, peinado estructural del cableado, reubicación táctica de dispositivos e integración/aprovisionamiento del Gateway VoIP Dinstar.</p>
+<h4 data-key="m-sol-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
+<p data-key="m3-sol-p" class="text-sm text-white font-medium leading-relaxed">Ejecución de mantenimiento preventivo y correctivo físico, peinado estructural del cableado, reubicación táctica de dispositivos e integración/aprovisionamiento del Gateway VoIP Dinstar.</p>
 </div>
 </div>
 <div class="lg:col-span-2 space-y-6">
 <div class="w-full bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-2xl space-y-4">
-<h4 class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Acondicionamiento de Rack</h4>
+<h4 data-key="m3-main-evidence" class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Acondicionamiento de Rack</h4>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in">
-<img src="assets/imagenes/rack.jpeg" alt="Rack Perdomo" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 3.2 // Hardware Gateway Dinstar</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/Dinstar.jpeg" alt="Dinstar" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
+<img src="assets/imagenes/rack.jpeg" alt="Rack" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
 </div>
 </div>
 </div>
 </div>
-<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-rack-perdomo')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
+<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-rack-perdom')" data-key="btn-close-console" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
 </div>
 </div>
 
+<!-- MODAL 4 // AUDITORIA FORENSE -->
 <div id="modal-sede-castilla" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center">
 <div class="bg-slate-900 text-slate-100 w-screen h-screen flex flex-col overflow-hidden">
 <div class="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-950">
 <div>
-<span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Forensic Security & VoIP Core</span>
-<h2 class="text-2xl font-black text-white tracking-tight mt-1">Recuperación Forense de Infraestructura Comprometida - Sede Castilla</h2>
+<span data-key="m4-meta" class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Forensic Security & VoIP Core</span>
+<h2 data-key="m4-h2" class="text-2xl font-black text-white tracking-tight mt-1">Recuperación Forense y Hardening de Infraestructura Crítica Comprometida</h2>
 </div>
 <button onclick="toggleModal('modal-sede-castilla')" class="text-slate-400 hover:text-cyan-400 font-bold text-2xl p-2 transition-colors">✕</button>
 </div>
 <div class="p-8 flex-grow overflow-y-auto space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 items-start">
 <div class="space-y-6 lg:col-span-1">
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Intrusión perimetral grave detectada: Router MikroTik comprometido con inyección de un usuario malicioso ('system'). Central telefónica Issabel inaccesible por pérdida total de credenciales críticas (CentOS/MariaDB/Apache) y desorganización extrema del rack estructural.</p>
+<h4 data-key="m-req-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
+<p data-key="m4-req-p" class="text-sm text-white font-medium leading-relaxed">Intrusión perimetral grave detectada: Router MikroTik comprometido con inyección de un usuario malicioso ('system'). Central telefónica Issabel inaccesible por pérdida total de credenciales críticas (CentOS/MariaDB/Apache) y desorganización extrema del rack estructural.</p>
 </div>
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Rescate físico/lógico integral: Reinstalación limpia del firmware mediante <strong class="text-cyan-300 font-bold">Netinstall</strong> en MikroTik, remoción de persistencias y despliegue de túnel <strong class="text-cyan-300 font-bold">WireGuard</strong> seguro. Recuperación de privilegios de Linux Issabel editando parámetros de arranque en <strong class="text-cyan-300 font-bold">GRUB</strong>, purga de base de datos y restauración de troncales SIP y mapeos de marcado de voz 1:1.</p>
+<h4 data-key="m-sol-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
+<p data-key="m4-sol-p" class="text-sm text-white font-medium leading-relaxed">Rescate físico/lógico integral: Reinstalación limpia del firmware mediante <strong class="text-cyan-300 font-bold">Netinstall</strong> en MikroTik, remoción de persistencias y despliegue de túnel <strong class="text-cyan-300 font-bold">WireGuard</strong> seguro. Recuperación de privilegios de Linux Issabel editando parámetros de arranque en <strong class="text-cyan-300 font-bold">GRUB</strong>, purga de base de datos y restauración de troncales SIP y mapeos de marcado de voz 1:1.</p>
 </div>
 </div>
 <div class="lg:col-span-2 space-y-6">
 <div class="w-full bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-2xl space-y-4">
-<h4 class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Arquitectura de Red Sede Castilla</h4>
+<h4 data-key="m4-main-evidence" class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Arquitectura de Red y Topología</h4>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in">
-<img src="assets/imagenes/DIAGRAMA.png" alt="Diagrama Castilla" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.2 // Intrusión Detectada ('system')</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/usurpacion.png" alt="Usurpacion" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.3 // Rack - Estado Inicial</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/rack.png" alt="Rack Inicial" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.4 // Rack - Acondicionamiento Final</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/rack final.png" alt="Rack Final" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.5 // Red de Datos Dinstar</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/red-dinstar.png" alt="Red Dinstar" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.6 // Aprovisionamiento SIP Gateway</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/dinstar-sip.png" alt="Dinstar SIP" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.7 // Rutas Corregidas Issabel</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/issabel-corrected-routes.png" alt="Routes Corrected" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.8 // Troncales Corregidas PBX</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/issabel-corrected-trunks.png" alt="Trunks Corrected" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.9 // Cuentas SIP Operativas</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/issabel-sip-accounts.png" alt="SIP Accounts" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.10 // Endurecimiento WireGuard Core</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/wireguard.png" alt="Wireguard" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.11 // Handshake Validado Cliente</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/wireguard2.png" alt="Wireguard Client" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 4.12 // Sede Física de Operaciones</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/cell-center.png" alt="Foto Sede" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
+<img src="assets/imagenes/DIAGRAMA.png" alt="Topology" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
 </div>
 </div>
 </div>
 </div>
-<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-sede-castilla')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
+<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-sede-castilla')" data-key="btn-close-console" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
 </div>
 </div>
 
+<!-- MODAL 5 // HARDENING PERIMETRAL -->
 <div id="modal-mitigacion-ataques" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center">
 <div class="bg-slate-900 text-slate-100 w-screen h-screen flex flex-col overflow-hidden">
 <div class="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-950">
 <div>
-<span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Ciberseguridad & Hardening Perimetral</span>
-<h2 class="text-2xl font-black text-white tracking-tight mt-1">Mitigación de Ataques e Intrusiones de Alto Impacto (IPSec/L2TP)</h2>
+<span data-key="m5-meta" class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Ciberseguridad & Hardening Perimetral</span>
+<h2 data-key="m5-h2" class="text-2xl font-black text-white tracking-tight mt-1">Mitigación de Ataques e Intrusiones de Alto Impacto (IPSec/L2TP)</h2>
 </div>
 <button onclick="toggleModal('modal-mitigacion-ataques')" class="text-slate-400 hover:text-cyan-400 font-bold text-2xl p-2 transition-colors">✕</button>
 </div>
 <div class="p-8 flex-grow overflow-y-auto space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 items-start">
 <div class="space-y-6 lg:col-span-1">
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">El Router Core MikroTik RB1100AHx4 se encontraba al borde del colapso operacional (89% de uso de CPU continuo) debido a ataques masivos e inyecciones de fuerza bruta sobre múltiples servicios legados expuestos.</p>
+<h4 data-key="m-req-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
+<p data-key="m5-req-p" class="text-sm text-white font-medium leading-relaxed">El Router Core MikroTik RB1100AHx4 se encontraba al borde del colapso operacional (89% de uso de CPU continuo) debido a ataques masivos e inyecciones de fuerza bruta sobre múltiples servicios legados expuestos.</p>
 </div>
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Hardening de Router Core RB1100AHx4 bajo colapso (<strong class="text-cyan-300 font-bold">86% al 0%</strong> de CPU) por fuerza bruta. Migración perimetral controlada hacia <strong class="text-cyan-300 font-bold">WireGuard</strong>.</p>
+<h4 data-key="m-sol-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
+<p data-key="m5-sol-p" class="text-sm text-white font-medium leading-relaxed">Hardening de Router Core RB1100AHx4 bajo colapso (<strong class="text-cyan-300 font-bold">86% al 0%</strong> de CPU) por fuerza bruta. Migración perimetral controlada hacia <strong class="text-cyan-300 font-bold">WireGuard</strong>.</p>
 </div>
 </div>
 <div class="lg:col-span-2 space-y-6">
 <div class="w-full bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-2xl space-y-4">
-<h4 class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Logs de Intrusión del Ataque</h4>
+<h4 data-key="m5-main-evidence" class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Logs de Intrusión del Ataque</h4>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in">
-<img src="assets/imagenes/captura1.png" alt="Ataques IPSec" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 5.2 // Aprovisionamiento WireGuard</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/captura2.png" alt="Creacion Wireguard" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 5.3 // Estabilización de CPU (0%)</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/captura3.png" alt="CPU Reposo" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 5.4 // Monitoreo de Recursos RB1100AHx4</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/captura4.png" alt="Recursos Hardware" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
+<img src="assets/imagenes/captura1.png" alt="Ataques" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
 </div>
 </div>
 </div>
 </div>
-<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-mitigacion-ataques')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
+<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-mitigacion-ataques')" data-key="btn-close-console" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
 </div>
 </div>
 
+<!-- MODAL 6 // CALL CENTER INFRASTRUCTURE -->
 <div id="modal-callcenter-ibague" class="fixed inset-0 z-50 hidden bg-slate-950/95 backdrop-blur-md flex items-center justify-center">
 <div class="bg-slate-900 text-slate-100 w-screen h-screen flex flex-col overflow-hidden">
 <div class="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-950">
 <div>
-<span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Despliegues de Infraestructura Express</span>
-<h2 class="text-2xl font-black text-white tracking-tight mt-1">Diseño, Conectividad e Instalación Integral de Sede Call Center</h2>
+<span data-key="m6-meta" class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Documentación Técnica // Despliegues de Infraestructura Express</span>
+<h2 data-key="m6-h2" class="text-2xl font-black text-white tracking-tight mt-1">Diseño, Conectividad e Instalación Integral de Infraestructura para Call Center</h2>
 </div>
 <button onclick="toggleModal('modal-callcenter-ibague')" class="text-slate-400 hover:text-cyan-400 font-bold text-2xl p-2 transition-colors">✕</button>
 </div>
 <div class="p-8 flex-grow overflow-y-auto space-y-8 lg:space-y-0 lg:grid lg:grid-cols-3 lg:gap-8 items-start">
 <div class="space-y-6 lg:col-span-1">
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Diseño e implementación desde cero de una infraestructura centralizada para call center en un tiempo récord de una semana: abarcando subsistema eléctrico, tendido de cableado, estaciones y nodos operativos.</p>
+<h4 data-key="m-req-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Descripción del Requerimiento:</h4>
+<p data-key="m6-req-p" class="text-sm text-white font-medium leading-relaxed">Diseño e implementación desde cero de una infraestructura centralizada para call center en un tiempo récord de una semana: abarcando subsistema eléctrico, tendido de cableado, estaciones y nodos operativos.</p>
 </div>
 <div class="bg-slate-950 p-5 rounded-xl border border-slate-800 shadow-lg">
-<h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
-<p class="text-sm text-white font-medium leading-relaxed">Ingeniería integral llave en mano: Montaje de rack core, enrutamiento robusto con MikroTik, esquemas de traslación de red (NAT), y orquestación del servidor VoIP Issabel configurando troncales, extensiones y políticas de rutas de salida estables.</p>
+<h4 data-key="m-sol-title" class="font-bold text-cyan-400 mb-2 uppercase tracking-wide text-xs">Solución Implementada:</h4>
+<p data-key="m6-sol-p" class="text-sm text-white font-medium leading-relaxed">Ingeniería integral llave en mano: Montaje de rack core, enrutamiento robusto con MikroTik, esquemas de traslación de red (NAT), y orquestación del servidor VoIP Issabel configurando troncales, extensiones y políticas de rutas de salida estables.</p>
 </div>
 </div>
 <div class="lg:col-span-2 space-y-6">
 <div class="w-full bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-2xl space-y-4">
-<h4 class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Topología Física e Interconexión</h4>
+<h4 data-key="m6-main-evidence" class="font-bold text-slate-300 text-xs uppercase tracking-wide flex items-center"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>Evidencia Principal: Topología Física e Interconexión</h4>
 <div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in">
-<img src="assets/imagenes/diagrama_ibague.png" alt="Diagrama Ibague" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 6.2 // Reglas de Enmascaramiento NAT</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/NAT.png" alt="NAT" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 6.3 // Aprovisionamiento de Extensiones</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/extensions.png" alt="Extensions" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 6.4 // Troncales SIP Habilitadas</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/Trunks.png" alt="Trunks" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 6.5 // Reglas de Marcación de Salida</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/outbound_routes.png" alt="Outbound" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 6.6 // Recursos de MikroTik</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/mikrotik_resources.png" alt="Mikrotik Resources" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
-</div>
-<div class="bg-slate-950 rounded-xl p-4 border border-slate-800 shadow-xl space-y-3">
-<h5 class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Evidencia 6.7 // Pruebas de Rendimiento de Salida</h5>
-<div class="w-full overflow-hidden rounded-lg bg-white border border-slate-200 flex justify-center items-center cursor-zoom-in"><img src="assets/imagenes/test_connection.png" alt="Speed Test" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[35vh] object-contain"></div>
+<img src="assets/imagenes/diagrama_ibague.png" alt="Diagrama" onclick="abrirZoom(this.src)" class="w-full h-auto max-h-[55vh] object-contain hover:scale-[1.01] transition-transform">
 </div>
 </div>
 </div>
 </div>
-<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-callcenter-ibague')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
+<div class="p-4 border-t border-slate-800 bg-slate-950 flex justify-end"><button onclick="toggleModal('modal-callcenter-ibague')" data-key="btn-close-console" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-colors border border-slate-700">Cerrar Consola</button></div>
 </div>
 </div>
 
 <div id="lightbox-zoom" onclick="cerrarZoom()" class="fixed inset-0 z-[100] hidden bg-slate-950/98 flex items-center justify-center p-4 cursor-zoom-out animate-fade-in">
 <div class="relative max-w-[95vw] max-h-[95vh] flex justify-center items-center">
-<span class="absolute top-4 right-4 bg-black/60 text-white font-bold px-3 py-1.5 rounded-lg text-xs tracking-wider uppercase">Hacer clic para cerrar</span>
+<span data-key="lightbox-close" class="absolute top-4 right-4 bg-black/60 text-white font-bold px-3 py-1.5 rounded-lg text-xs tracking-wider uppercase">Hacer clic para cerrar</span>
 <img id="imagen-ampliada" src="" alt="Evidencia Ampliada" class="w-auto h-auto max-w-full max-h-[92vh] rounded-lg shadow-2xl border border-slate-800 object-contain">
 </div>
 </div>
 
-<footer class="p-6 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
+<footer data-key="footer-text" class="p-6 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
 Jefferson Seijas © 2026 | Infraestructura y Seguridad Eficiente.
 </footer>
 
@@ -461,6 +351,160 @@ if (lightbox) {
 lightbox.classList.add('hidden');
 }
 }
+
+// OBJETO DE TRADUCCIONES INTERNAS AUTOCONTENIDAS
+const translations = {
+    "es": {
+        "nav-sub": "| Ingeniería Electrónica & Soluciones TI",
+        "nav-servicios": "Servicios",
+        "nav-catalogo": "Catálogo de Trabajos",
+        "nav-contacto": "Contacto / Cotizar",
+        "cat-title": "Catálogo de Trabajos Realizados",
+        "cat-subtitle": "Auditorías forenses, mitigación de ataques perimetrales, ingeniería de campo y soluciones VoIP.",
+        "btn-details": "Ver Detalles y Evidencias ➔",
+        "btn-close-console": "Cerrar Consola",
+        "lightbox-close": "Hacer clic para cerrar",
+        "footer-text": "Jefferson Seijas © 2026 | Infraestructura y Seguridad Eficiente.",
+        "m-req-title": "Descripción del Requerimiento:",
+        "m-sol-title": "Solución Implementada:",
+        "m-main-evidence": "Evidencia Principal",
+        
+        "proj-1-tag": "Infraestructura de Red",
+        "proj-1-title": "Arquitectura VPN Multi-Site Internacional",
+        "proj-1-desc": "Interconexión segura de sedes corporativas mediante túneles WireGuard de baja latencia sobre hardware MikroTik.",
+        "m1-meta": "Documentación Técnica // Infraestructura de Red",
+        "m1-h2": "Despliegue e Interconexión VPN WireGuard",
+        "m1-req-p": "La organización requería centralizar sus servicios de bases de datos y telefonía IP entre su sede principal y sucursales, mitigando riesgos de interceptación de tráfico en la red pública.",
+        "m1-sol-p": "Configuración de enrutadores de borde MikroTik corriendo RouterOS v7. Implementación de un backbone VPN basado en WireGuard, optimizando las tablas de ruteo y aplicando reglas estrictas en el Firewall (Filter Rules).",
+
+        "proj-2-tag": "SISTEMAS & VIRTUALIZACIÓN",
+        "proj-2-title": "Implementación de Servicios de Alojamiento Corporativo",
+        "proj-2-desc": "Consolidación de infraestructura física HP/IBM utilizando hipervisores VMware ESXi 5 y ESXi 7 con enmascaramiento NAT.",
+        "m2-meta": "Documentación Técnica // Virtualización & Cloud",
+        "m2-h2": "Implementación de Servicios de Alojamiento Corporativo",
+        "m2-req-p": "Centralización, consolidación y aislamiento lógico de entornos de producción críticos. Se requería migrar servicios legados y desplegar instancias de cómputo tolerantes a fallas sobre hardware de servidor independiente.",
+        "m2-sol-p": "Configuración de hipervisores VMware ESXi 5 y ESXi 7 distribuidos estratégicamente sobre infraestructura física HP Enterprise e IBM. Segmentación perimetral mediante políticas de ruteo estricto y reglas de enmascaramiento NAT Servers en core layer.",
+
+        "proj-3-tag": "Ingeniería de Campo",
+        "proj-3-title": "Optimización e Ingeniería de Infraestructura Estructural de Rack de Telecomunicaciones",
+        "proj-3-desc": "Mantenimiento correctivo físico, peinado, limpieza y optimización de flujos térmicos en rack de telecomunicaciones corporativo.",
+        "m3-meta": "Documentación Técnica // Ingeniería de Campo",
+        "m3-h2": "Optimización e Ingeniería de Infraestructura Estructural de Rack de Telecomunicaciones",
+        "m3-req-p": "El estado inicial del rack presentaba desorganización crítica de cableado estructural, acumulación de partículas térmicamente obstructivas y riesgo latente de desconexión.",
+        "m3-sol-p": "Ejecución de mantenimiento preventivo y correctivo físico, peinado estructural del cableado, reubicación táctica de dispositivos e integración/aprovisionamiento del Gateway VoIP Dinstar.",
+
+        "proj-4-tag": "Ciberseguridad & VoIP Audits",
+        "proj-4-title": "Recuperación Forense y Hardening de Infraestructura Crítica Comprometida",
+        "proj-4-desc": "Netinstall correctivo en MikroTik, auditoría ante intrusiones, rescate de claves Issabel desde GRUB y reconfiguración de telefonía SIP 1:1.",
+        "m4-meta": "Documentación Técnica // Forensic Security & VoIP Core",
+        "m4-h2": "Recuperación Forense y Hardening de Infraestructura Crítica Comprometida",
+        "m4-req-p": "Intrusión perimetral grave detectada: Router MikroTik comprometido con inyección de un usuario malicioso ('system'). Central telefónica Issabel inaccesible por pérdida total de credenciales críticas (CentOS/MariaDB/Apache) y desorganización extrema del rack estructural.",
+        "m4-sol-p": "Rescate físico/lógico integral: Reinstalación limpia del firmware mediante Netinstall en MikroTik, remoción de persistencias y despliegue de túnel WireGuard seguro. Recuperación de privilegios de Linux Issabel editando parámetros de arranque en GRUB, purga de base de datos y restauración de troncales SIP y mapeos de marcado de voz 1:1.",
+
+        "proj-5-tag": "Seguridad Perimetral",
+        "proj-5-title": "Mitigación de Ataques e Intrusiones de Alto Impacto (IPSec/L2TP)",
+        "proj-5-desc": "Hardening de Router Core RB1100AHx4 bajo colapso (89% CPU) por fuerza bruta. Migración perimetral controlada hacia WireGuard.",
+        "m5-meta": "Documentación Técnica // Ciberseguridad & Hardening Perimetral",
+        "m5-h2": "Mitigación de Ataques e Intrusiones de Alto Impacto (IPSec/L2TP)",
+        "m5-req-p": "El Router Core MikroTik RB1100AHx4 se encontraba al borde del colapso operacional (89% de uso de CPU continuo) debido a ataques masivos e inyecciones de fuerza bruta sobre múltiples servicios legados expuestos.",
+        "m5-sol-p": "Hardening de Router Core RB1100AHx4 bajo colapso (86% al 0% de CPU) por fuerza bruta. Migración perimetral controlada hacia WireGuard.",
+
+        "proj-6-tag": "Despliegues Llave en Mano",
+        "proj-6-title": "Diseño, Conectividad e Instalación Integral de Infraestructura para Call Center",
+        "proj-6-desc": "Despliegue integral express (1 semana): acometidas eléctricas, cableado estructurado, configuración MikroTik y troncales VoIP Issabel.",
+        "m6-meta": "Documentación Técnica // Despliegues de Infraestructura Express",
+        "m6-h2": "Diseño, Conectividad e Instalación Integral de Infraestructura para Call Center",
+        "m6-req-p": "Diseño e implementación desde cero de una infraestructura centralizada para call center en un tiempo récord de una semana: abarcando subsistema eléctrico, tendido de cableado, estaciones y nodos operativos.",
+        "m6-sol-p": "Ingeniería integral llave en mano: Montaje de rack core, enrutamiento robusto con MikroTik, esquemas de traslación de red (NAT), y orquestación del servidor VoIP Issabel configurando troncales, extensiones y políticas de rutas de salida estables."
+    },
+    "en": {
+        "nav-sub": "| Electronics Engineering & IT Solutions",
+        "nav-servicios": "Services",
+        "nav-catalogo": "Project Catalog",
+        "nav-contacto": "Contact / Get a Quote",
+        "cat-title": "Proven Engineering Project Catalog",
+        "cat-subtitle": "Forensic audits, perimeter attack mitigation, field engineering, and mission-critical VoIP deployments.",
+        "btn-details": "View Details & Evidence ➔",
+        "btn-close-console": "Close Console",
+        "lightbox-close": "Click to close",
+        "footer-text": "Jefferson Seijas © 2026 | Efficient Infrastructure & Security.",
+        "m-req-title": "Requirement Description:",
+        "m-sol-title": "Solution Implemented:",
+        "m-main-evidence": "Main Evidence",
+
+        "proj-1-tag": "NETWORK INFRASTRUCTURE",
+        "proj-1-title": "International Multi-Site VPN Architecture",
+        "proj-1-desc": "Secure interconnection of corporate branches deploying low-latency WireGuard tunnels over MikroTik routing hardware.",
+        "m1-meta": "Technical Documentation // Network Infrastructure",
+        "m1-h2": "WireGuard VPN Deployment & Interconnection",
+        "m1-req-p": "The organization required centralization of database services and IP telephony between its main headquarters and regional branches, mitigating traffic interception risks over the public network.",
+        "m1-sol-p": "Configuration of MikroTik edge routers running RouterOS v7. Implementation of a secure VPN backbone based on WireGuard, optimizing routing tables and enforcing strict Firewall Filter Rules.",
+
+        "proj-2-tag": "SYSTEMS & VIRTUALIZATION",
+        "proj-2-title": "Enterprise-Grade Corporate Hosting Infrastructure",
+        "proj-2-desc": "Consolidation of HP/IBM physical infrastructure deploying VMware ESXi 5 and ESXi 7 hypervisors with advanced NAT masking.",
+        "m2-meta": "Technical Documentation // Virtualization & Cloud",
+        "m2-h2": "Corporate Hosting Services Implementation",
+        "m2-req-p": "Centralization, consolidation, and logical isolation of critical production environments. Required migrating legacy services and deploying fault-tolerant compute instances over independent server hardware.",
+        "m2-sol-p": "Configuration of VMware ESXi 5 and ESXi 7 hypervisors strategically distributed over HP Enterprise and IBM physical infrastructure. Perimeter segmentation through strict routing policies and NAT Server masking rules at the core layer.",
+
+        "proj-3-tag": "FIELD ENGINEERING",
+        "proj-3-title": "Telecom Rack Optimization & Infrastructure Engineering",
+        "proj-3-desc": "Physical corrective maintenance, cable management, structured cleanup, and thermal flow optimization for corporate telecom racks.",
+        "m3-meta": "Technical Documentation // Field Engineering",
+        "m3-h2": "Telecom Rack Optimization & Infrastructure Engineering",
+        "m3-req-p": "The initial state of the rack presented critical disorganization of structured cabling, accumulation of thermally obstructive particles, and a latent risk of unexpected disconnection.",
+        "m3-sol-p": "Execution of physical preventive and corrective maintenance, structural cable combing, strategic device relocation, and integration/provisioning of the Dinstar VoIP Gateway.",
+
+        "proj-4-tag": "CYBERSECURITY & VOIP AUDITS",
+        "proj-4-title": "Forensic Recovery & Hardening of Compromised Critical Infrastructure",
+        "proj-4-desc": "Corrective MikroTik Netinstall deployments, intrusion security audits, Issabel root password recovery from GRUB, and 1:1 SIP trunk reconfigurations.",
+        "m4-meta": "Technical Documentation // Forensic Security & VoIP Core",
+        "m4-h2": "Forensic Recovery & Hardening of Compromised Critical Infrastructure",
+        "m4-req-p": "Severe perimeter intrusion detected: MikroTik router compromised via malicious user injection ('system'). Issabel PBX inaccessible due to total loss of critical credentials (CentOS/MariaDB/Apache) alongside extreme structural rack disorder.",
+        "m4-sol-p": "Comprehensive physical/logical rescue: Clean firmware reinstallation using MikroTik Netinstall, persistence removal, and secure WireGuard tunnel deployment. Privilege recovery on Linux Issabel by editing GRUB boot parameters, database purge, and restoration of 1:1 SIP trunks and voice dial patterns.",
+
+        "proj-5-tag": "PERIMETER SECURITY",
+        "proj-5-title": "High-Impact Intrusion & Attack Mitigation (IPSec/L2TP)",
+        "proj-5-desc": "Advanced configuration of security policies to block brute-force intrusion attempts and Denial of Service (DoS) attacks in real-time.",
+        "m5-meta": "Technical Documentation // Cybersecurity & Perimeter Hardening",
+        "m5-h2": "High-Impact Intrusion & Attack Mitigation (IPSec/L2TP)",
+        "m5-req-p": "The Core MikroTik RB1100AHx4 router was on the verge of operational collapse (89% continuous CPU usage) due to massive brute-force attacks and injections targeting legacy exposed services.",
+        "m5-sol-p": "Hardening of Core RB1100AHx4 under collapse (dropping CPU from 86% to 0%) driven by brute-force attacks. Controlled perimeter migration to WireGuard.",
+
+        "proj-6-tag": "TURNKEY DEPLOYMENTS",
+        "proj-6-title": "End-to-End Infrastructure Design & Connectivity for Call Centers",
+        "proj-6-desc": "Full deployment of structured cabling, redundant logical networks, and automated provisioning pipelines for workstations.",
+        "m6-meta": "Technical Documentation // Turnkey Deployments",
+        "m6-h2": "End-to-End Infrastructure Design & Connectivity for Call Centers",
+        "m6-req-p": "From-scratch design and implementation of a centralized call center infrastructure in a record time of one week: spanning electrical subsystem, structured cabling, workstations, and operational nodes.",
+        "m6-sol-p": "Turnkey comprehensive engineering: Core rack mounting, robust routing with MikroTik, Network Address Translation (NAT) schemes, and Issabel VoIP server orchestration configuring trunks, extensions, and stable outbound routes."
+    }
+};
+
+let currentLang = localStorage.getItem('preferredLang') || 'es';
+const langToggleBtn = document.getElementById('language-toggle');
+
+function applyTranslations() {
+    langToggleBtn.textContent = currentLang === 'es' ? 'EN' : 'ES';
+    document.documentElement.lang = currentLang;
+
+    document.querySelectorAll('[data-key]').forEach(element => {
+        const key = element.getAttribute('data-key');
+        if (translations[currentLang] && translations[currentLang][key]) {
+            element.textContent = translations[currentLang][key];
+        }
+    });
+}
+
+// Inicialización instantánea compartiendo el estado de localStorage
+applyTranslations();
+
+langToggleBtn.addEventListener('click', () => {
+    currentLang = currentLang === 'es' ? 'en' : 'es';
+    localStorage.setItem('preferredLang', currentLang); // Guarda la selección para todo el ecosistema de la página
+    applyTranslations();
+});
 </script>
 
 </body>

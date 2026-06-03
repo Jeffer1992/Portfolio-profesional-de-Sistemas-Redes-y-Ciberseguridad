@@ -10,36 +10,38 @@
 
     <nav class="sticky top-0 z-50 bg-slate-950 border-b border-cyan-500/20 px-6 py-4 flex justify-between items-center shadow-md">
         <div class="flex items-center space-x-3">
-            
             <a href="index.html" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 px-3 py-2 rounded-lg font-black tracking-wider text-sm shadow-lg shadow-cyan-500/20 transition-colors block">
                 JS CONSULTING
             </a>
-            
-            <span class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
+            <span data-key="nav-sub" class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
         </div>
         
-        <div class="flex items-center space-x-6 font-semibold text-sm">
-            <a href="Servicios.html" class="text-slate-300 hover:text-cyan-400 transition-colors">Servicios</a>
-            <a href="catalogo_de_trabajos.html" class="text-slate-300 hover:text-cyan-400 transition-colors">Catálogo de Trabajos</a>
+        <div class="flex items-center space-x-4 font-semibold text-sm">
+            <a href="Servicios.html" data-key="nav-servicios" class="text-slate-300 hover:text-cyan-400 transition-colors">Servicios</a>
+            <a href="catalogo_de_trabajos.html" data-key="nav-catalogo" class="text-slate-300 hover:text-cyan-400 transition-colors">Catálogo de Trabajos</a>
             
-            <a href="contacto.html" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 px-4 py-2 rounded-lg transition-all shadow-md shadow-cyan-500/5">
+            <a href="contacto.html" data-key="nav-contacto" class="border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-slate-950 px-4 py-2 rounded-lg transition-all shadow-md shadow-cyan-500/5">
                 Contacto / Cotizar
             </a>
+
+            <button id="language-toggle" class="bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg font-bold transition-all text-xs tracking-wider uppercase">
+                EN
+            </button>
         </div>
     </nav>
 
     <header class="bg-gradient-to-b from-blue-100/70 via-blue-50/30 to-slate-50 py-24 px-6 border-b border-slate-200">
         <div class="container mx-auto max-w-4xl text-center md:text-left">
-            <span class="text-blue-700 font-extrabold text-xs uppercase tracking-widest bg-blue-200/60 px-3 py-1 rounded-full border border-blue-300/30">
+            <span data-key="hero-badge" class="text-blue-700 font-extrabold text-xs uppercase tracking-widest bg-blue-200/60 px-3 py-1 rounded-full border border-blue-300/30">
                 Consultoría Estratégica Independiente
             </span>
-            <h1 class="text-4xl md:text-5xl font-black text-slate-900 mt-5 mb-6 leading-tight">
+            <h1 data-key="hero-title" class="text-4xl md:text-5xl font-black text-slate-900 mt-5 mb-6 leading-tight">
                 Jefferson Seijas
             </h1>
-            <p class="text-xl md:text-2xl font-bold text-blue-800 mb-6">
+            <p data-key="hero-subtitle" class="text-xl md:text-2xl font-bold text-blue-800 mb-6">
                 Ingeniero Electrónico & Especialista en Infraestructura de Sistemas
             </p>
-            <p class="text-lg text-slate-600 leading-relaxed max-w-3xl">
+            <p data-key="hero-description" class="text-lg text-slate-600 leading-relaxed max-w-3xl">
                 Diseño, aseguro y optimizo ecosistemas tecnológicos corporativos de misión crítica. Mi enfoque integra la precisión del hardware con la lógica avanzada del software para garantizar la continuidad del negocio, la protección de activos digitales y la automatización eficiente de procesos.
             </p>
         </div>
@@ -49,14 +51,14 @@
         
         <section class="grid md:grid-cols-3 gap-8 items-start">
             <div class="md:col-span-2 space-y-4">
-                <h2 class="text-2xl font-bold text-slate-900 border-b-4 pb-2 border-blue-600 inline-block">
+                <h2 data-key="section-about-title" class="text-2xl font-bold text-slate-900 border-b-4 pb-2 border-blue-600 inline-block">
                     Sobre mi Trayectoria y Soluciones
                 </h2>
                 <div class="pt-2 space-y-4">
-                    <p class="text-slate-600 leading-relaxed">
+                    <p data-key="about-p1" class="text-slate-600 leading-relaxed">
                         Como ingeniero electrónico profesional, cuento con una trayectoria sólida gestionando arquitecturas de red complejas y entornos operativos empresariales. No me limito a configurar sistemas; realizo ingeniería inversa y auditorías profundas para entender el comportamiento de la infraestructura desde la capa física hasta la lógica.
                     </p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p data-key="about-p2" class="text-slate-600 leading-relaxed">
                         Mi trabajo se centra en resolver problemas complejos de conectividad, seguridad e infraestructura, garantizando soluciones escalables que no dejen agujeros de seguridad. Desde el despliegue de servidores dedicados hasta el aseguramiento de enlaces internacionales, construyo entornos corporativos inmunes a fallas críticas.
                     </p>
                 </div>
@@ -64,59 +66,59 @@
             
             <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-6 rounded-2xl text-white shadow-xl shadow-blue-600/10 md:mt-12 border border-blue-500">
                 <span class="text-2xl bg-white/20 p-2 rounded-lg inline-block">📊</span>
-                <h3 class="text-xs font-bold text-blue-200 uppercase tracking-wider mt-4 mb-1">Filosofía Profesional</h3>
-                <p class="text-lg italic font-bold tracking-wide">
+                <h3 data-key="philosophy-title" class="text-xs font-bold text-blue-200 uppercase tracking-wider mt-4 mb-1">Filosofía Profesional</h3>
+                <p data-key="philosophy-quote" class="text-lg italic font-bold tracking-wide">
                     "Precision in hardware, logic in software."
                 </p>
-                <p class="text-xs text-blue-100 mt-4 leading-relaxed border-t border-white/20 pt-3">
-                    Priorizo la modularidad, las decisiones respaldadas por datos y la documentation meticulosa. Disciplina técnica aplicada bajo una mentalidad de mejora continua.
+                <p data-key="philosophy-desc" class="text-xs text-blue-100 mt-4 leading-relaxed border-t border-white/20 pt-3">
+                    Priorizo la modularidad, las decisiones respaldadas por datos y la documentación meticulosa. Disciplina técnica aplicada bajo una mentalidad de mejora continua.
                 </p>
             </div>
         </section>
 
         <section class="space-y-6">
-            <h2 class="text-2xl font-bold text-slate-900 border-b-4 pb-2 border-blue-600 inline-block">
+            <h2 data-key="section-skills-title" class="text-2xl font-bold text-slate-900 border-b-4 pb-2 border-blue-600 inline-block">
                 Especialización Técnica y Campos de Acción
             </h2>
-            <p class="text-slate-500 text-sm pt-2">
+            <p data-key="skills-subtitle" class="text-slate-500 text-sm pt-2">
                 Áreas de dominio de ingeniería aplicadas a la optimización y resiliencia corporativa:
             </p>
             
             <div class="grid sm:grid-cols-2 gap-4 text-sm pt-2">
                 <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border-l-4 border-l-blue-600 border-y-slate-200 border-r-slate-200 border shadow-sm hover:shadow-md transition-shadow">
                     <span class="text-blue-600 font-extrabold text-base bg-blue-50 px-2 py-0.5 rounded-md">🌐</span>
-                    <p class="text-slate-700"><strong class="text-slate-900 block mb-0.5">Arquitectura de Red de Alto Rendimiento:</strong> Diseño e implementación de redes certificadas y ruteo especializado con MikroTik y Cisco.</p>
+                    <p class="text-slate-700"><strong data-key="skill-1-title" class="text-slate-900 block mb-0.5">Arquitectura de Red de Alto Rendimiento:</strong><span data-key="skill-1-desc">Diseño e implementación de redes certificadas y ruteo especializado con MikroTik y Cisco.</span></p>
                 </div>
                 <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border-l-4 border-l-blue-600 border-y-slate-200 border-r-slate-200 border shadow-sm hover:shadow-md transition-shadow">
                     <span class="text-blue-600 font-extrabold text-base bg-blue-50 px-2 py-0.5 rounded-md">🔒</span>
-                    <p class="text-slate-700"><strong class="text-slate-900 block mb-0.5">Seguridad Informática Avanzada:</strong> Despliegue de firewalls estrictos por hardware/software y túneles VPN con cifrado de seguridad militar.</p>
+                    <p class="text-slate-700"><strong data-key="skill-2-title" class="text-slate-900 block mb-0.5">Seguridad Informática Avanzada:</strong><span data-key="skill-2-desc">Despliegue de firewalls estrictos por hardware/software y túneles VPN con cifrado de seguridad militar.</span></p>
                 </div>
                 <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border-l-4 border-l-blue-600 border-y-slate-200 border-r-slate-200 border shadow-sm hover:shadow-md transition-shadow">
                     <span class="text-blue-600 font-extrabold text-base bg-blue-50 px-2 py-0.5 rounded-md">🖥️</span>
-                    <p class="text-slate-700"><strong class="text-slate-900 block mb-0.5">Virtualización y Almacenamiento:</strong> Consolidación de servidores redundantes, entornos cloud privados y administración de servicios NAS.</p>
+                    <p class="text-slate-700"><strong data-key="skill-3-title" class="text-slate-900 block mb-0.5">Virtualización y Almacenamiento:</strong><span data-key="skill-3-desc">Consolidación de servidores redundantes, entornos cloud privados y administración de servicios NAS.</span></p>
                 </div>
                 <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border-l-4 border-l-blue-600 border-y-slate-200 border-r-slate-200 border shadow-sm hover:shadow-md transition-shadow">
                     <span class="text-blue-600 font-extrabold text-base bg-blue-50 px-2 py-0.5 rounded-md">🐧</span>
-                    <p class="text-slate-700"><strong class="text-slate-900 block mb-0.5">Entornos Linux Corporativos:</strong> Administración y optimización de sistemas operativos Linux para estaciones de trabajo eficientes y seguras.</p>
+                    <p class="text-slate-700"><strong data-key="skill-4-title" class="text-slate-900 block mb-0.5">Entornos Linux Corporativos:</strong><span data-key="skill-4-desc">Administración y optimización de sistemas operativos Linux para estaciones de trabajo eficientes y seguras.</span></p>
                 </div>
                 <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border-l-4 border-l-blue-600 border-y-slate-200 border-r-slate-200 border shadow-sm hover:shadow-md transition-shadow">
                     <span class="text-blue-600 font-extrabold text-base bg-blue-50 px-2 py-0.5 rounded-md">📞</span>
-                    <p class="text-slate-700"><strong class="text-slate-900 block mb-0.5">Telecomunicaciones y CCTV:</strong> Integración de telefonía IP (VoIP) y sistemas cerrados de videovigilancia de alta seguridad.</p>
+                    <p class="text-slate-700"><strong data-key="skill-5-title" class="text-slate-900 block mb-0.5">Telecomunicaciones y CCTV:</strong><span data-key="skill-5-desc">Integración de telefonía IP (VoIP) y sistemas cerrados de videovigilancia de alta seguridad.</span></p>
                 </div>
                 <div class="flex items-start space-x-3 p-4 bg-white rounded-xl border-l-4 border-l-blue-600 border-y-slate-200 border-r-slate-200 border shadow-sm hover:shadow-md transition-shadow">
                     <span class="text-blue-600 font-extrabold text-base bg-blue-50 px-2 py-0.5 rounded-md">⚙️</span>
-                    <p class="text-slate-700"><strong class="text-slate-900 block mb-0.5">Automatización Industrial:</strong> Ingeniería inversa de hardware y sistemas embebidos aplicados al control de procesos.</p>
+                    <p class="text-slate-700"><strong data-key="skill-6-title" class="text-slate-900 block mb-0.5">Automatización Industrial:</strong><span data-key="skill-6-desc">Ingeniería inversa de hardware y sistemas embebidos aplicados al control de procesos.</span></p>
                 </div>
             </div>
         </section>
 
         <section class="bg-gradient-to-r from-blue-700 to-blue-950 rounded-2xl p-8 text-center text-white shadow-xl shadow-blue-900/30 space-y-4 border border-blue-800">
-            <h3 class="text-2xl font-bold">¿Necesitas asegurar o escalar la infraestructura de tu empresa?</h3>
-            <p class="text-blue-100 max-w-xl mx-auto text-sm">
+            <h3 data-key="cta-title" class="text-2xl font-bold">¿Necesitas asegurar o escalar la infraestructura de tu empresa?</h3>
+            <p data-key="cta-desc" class="text-blue-100 max-w-xl mx-auto text-sm">
                 Ofrezco soluciones de soporte remoto integral, auditorías de seguridad perimetral y diseño de redes desde cero adaptadas a las necesidades reales de tu negocio.
             </p>
             <div class="pt-2">
-                <a href="contacto.html" class="inline-block bg-white text-blue-700 font-black px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors shadow-lg shadow-blue-950/50">
+                <a href="contacto.html" data-key="cta-btn" class="inline-block bg-white text-blue-700 font-black px-6 py-3 rounded-xl hover:bg-slate-100 transition-colors shadow-lg shadow-blue-950/50">
                     Iniciar Consulta Técnica ➔
                 </a>
             </div>
@@ -124,9 +126,106 @@
 
     </main>
 
-    <footer class="p-8 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
+    <footer data-key="footer-text" class="p-8 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
         Jefferson Seijas © 2026 | Desarrollado bajo una mentalidad de mejora continua y filosofía estoica.
     </footer>
 
+    <script>
+        // Objeto de traducciones integrado directamente en el HTML
+        const translations = {
+            "es": {
+                "nav-sub": "| Ingeniería Electrónica & Soluciones TI",
+                "nav-servicios": "Servicios",
+                "nav-catalogo": "Catálogo de Trabajos",
+                "nav-contacto": "Contacto / Cotizar",
+                "hero-badge": "Consultoría Estratégica Independiente",
+                "hero-title": "Jefferson Seijas",
+                "hero-subtitle": "Ingeniero Electrónico & Especialista en Infraestructura de Sistemas",
+                "hero-description": "Diseño, aseguro y optimizo ecosistemas tecnológicos corporativos de misión crítica. Mi enfoque integra la precisión del hardware con la lógica avanzada del software para garantizar la continuidad del negocio, la protección de activos digitales y la automatización eficiente de procesos.",
+                "section-about-title": "Sobre mi Trayectoria y Soluciones",
+                "about-p1": "Como ingeniero electrónico profesional, cuento con una trayectoria sólida gestionando arquitecturas de red complejas y entornos operativos empresariales. No me limito a configurar sistemas; realizo ingeniería inversa y auditorías profundas para entender el comportamiento de la infraestructura desde la capa física hasta la lógica.",
+                "about-p2": "Mi trabajo se centra en resolver problemas complejos de conectividad, seguridad e infraestructura, garantizando soluciones escalables que no dejen agujeros de seguridad. Desde el despliegue de servidores dedicados hasta el aseguramiento de enlaces internacionales, construyo entornos corporativos inmunes a fallas críticas.",
+                "philosophy-title": "Filosofía Profesional",
+                "philosophy-quote": "\"Precision in hardware, logic in software.\"",
+                "philosophy-desc": "Priorizo la modularidad, las decisiones respaldadas por datos y la documentación meticulosa. Disciplina técnica aplicada bajo una mentalidad de mejora continua.",
+                "section-skills-title": "Especialización Técnica y Campos de Acción",
+                "skills-subtitle": "Áreas de dominio de ingeniería aplicadas a la optimización y resiliencia corporativa:",
+                "skill-1-title": "Arquitectura de Red de Alto Rendimiento:",
+                "skill-1-desc": " Diseño e implementación de redes certificadas y ruteo especializado con MikroTik y Cisco.",
+                "skill-2-title": "Seguridad Informática Avanzada:",
+                "skill-2-desc": " Despliegue de firewalls estrictos por hardware/software y túneles VPN con cifrado de seguridad militar.",
+                "skill-3-title": "Virtualización y Almacenamiento:",
+                "skill-3-desc": " Consolidación de servidores redundantes, entornos cloud privados y administración de servicios NAS.",
+                "skill-4-title": "Entornos Linux Corporativos:",
+                "skill-4-desc": " Administración y optimización de sistemas operativos Linux para estaciones de trabajo eficientes y seguras.",
+                "skill-5-title": "Telecomunicaciones y CCTV:",
+                "skill-5-desc": " Integración de telefonía IP (VoIP) y sistemas cerrados de videovigilancia de alta seguridad.",
+                "skill-6-title": "Automatización Industrial:",
+                "skill-6-desc": " Ingeniería inversa de hardware y sistemas embebidos aplicados al control de procesos.",
+                "cta-title": "¿Necesitas asegurar o escalar la infraestructura de tu empresa?",
+                "cta-desc": "Ofrezco soluciones de soporte remoto integral, auditorías de seguridad perimetral y diseño de redes desde cero adaptadas a las necesidades reales de tu negocio.",
+                "cta-btn": "Iniciar Consulta Técnica ➔",
+                "footer-text": "Jefferson Seijas © 2026 | Desarrollado bajo una mentalidad de mejora continua y filosofía estoica."
+            },
+            "en": {
+                "nav-sub": "| Electronics Engineering & IT Solutions",
+                "nav-servicios": "Services",
+                "nav-catalogo": "Project Catalog",
+                "nav-contacto": "Contact / Get a Quote",
+                "hero-badge": "Independent Strategic Consulting",
+                "hero-title": "Jefferson Seijas",
+                "hero-subtitle": "Electronics Engineer & Systems Infrastructure Specialist",
+                "hero-description": "I design, secure, and optimize mission-critical corporate IT ecosystems. My approach integrates hardware precision with advanced software logic to guarantee business continuity, digital asset protection, and efficient process automation.",
+                "section-about-title": "About My Trajectory & Solutions",
+                "about-p1": "As a professional electronics engineer, I have a solid track record managing complex network architectures and enterprise operational environments. I don't just configure systems; I perform reverse engineering and deep audits to understand infrastructure behavior from the physical layer to the logical layer.",
+                "about-p2": "My work focuses on solving complex connectivity, security, and infrastructure challenges, ensuring scalable solutions that leave zero security vulnerabilities. From dedicated server deployments to securing international links, I build corporate environments immune to critical failures.",
+                "philosophy-title": "Professional Philosophy",
+                "philosophy-quote": "\"Precision in hardware, logic in software.\"",
+                "philosophy-desc": "I prioritize modularity, data-driven decisions, and meticulous documentation. Technical discipline applied under a mindset of continuous improvement.",
+                "section-skills-title": "Technical Specialization & Core Expertise",
+                "skills-subtitle": "Engineering domains applied to corporate optimization and resilience:",
+                "skill-1-title": "High-Performance Network Architecture:",
+                "skill-1-desc": " Design and implementation of certified networks and specialized routing utilizing MikroTik and Cisco hardware.",
+                "skill-2-title": "Advanced Cybersecurity & Hardening:",
+                "skill-2-desc": " Deployment of strict hardware/software firewalls and secure VPN tunnels with enterprise-grade encryption.",
+                "skill-3-title": "Virtualization & Storage Solutions:",
+                "skill-3-desc": " Consolidation of redundant servers, private cloud environments, and NAS management.",
+                "skill-4-title": "Enterprise Linux Environments:",
+                "skill-4-desc": " Management and optimization of corporate Linux operating systems for secure and efficient workstations.",
+                "skill-5-title": "Telecom & Secure CCTV Systems:",
+                "skill-5-desc": " IP Telephony (VoIP) integration and high-security closed-circuit video surveillance systems.",
+                "skill-6-title": "Industrial Automation & Embedded Systems:",
+                "skill-6-desc": " Hardware reverse engineering and embedded systems applied to process control.",
+                "cta-title": "Need to secure or scale your company's infrastructure?",
+                "cta-desc": "I offer comprehensive remote support, perimeter security audits, and from-scratch network design tailored to your actual business needs.",
+                "cta-btn": "Start Technical Consultation ➔",
+                "footer-text": "Jefferson Seijas © 2026 | Developed under a continuous improvement mindset and Stoic philosophy."
+            }
+        };
+
+        let currentLang = localStorage.getItem('preferredLang') || 'es';
+        const langToggleBtn = document.getElementById('language-toggle');
+
+        function applyTranslations() {
+            langToggleBtn.textContent = currentLang === 'es' ? 'EN' : 'ES';
+            document.documentElement.lang = currentLang;
+
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang] && translations[currentLang][key]) {
+                    element.textContent = translations[currentLang][key];
+                }
+            });
+        }
+
+        // Ejecutar inmediatamente al cargar la página leyendo el localStorage
+        applyTranslations();
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+            localStorage.setItem('preferredLang', currentLang); // Guarda la persistencia global
+            applyTranslations();
+        });
+    </script>
 </body>
 </html>

@@ -13,28 +13,32 @@
             <a href="index.html" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 px-3 py-2 rounded-lg font-black tracking-wider text-sm shadow-lg shadow-cyan-500/20 transition-colors block">
                 JS CONSULTING
             </a>
-            <span class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
+            <span data-key="nav-sub" class="text-sm font-semibold text-slate-400 hidden md:inline">| Ingeniería Electrónica & Soluciones TI</span>
         </div>
-        <div class="flex items-center space-x-6 font-semibold text-sm">
-            <a href="Servicios.html" class="text-slate-300 hover:text-cyan-400 transition-colors">Servicios</a>
-            <a href="catalogo_de_trabajos.html" class="text-slate-300 hover:text-cyan-400 transition-colors">Catálogo de Trabajos</a>
-            <a href="index.html" class="text-cyan-400 hover:underline">← Volver al Inicio</a>
+        <div class="flex items-center space-x-4 font-semibold text-sm">
+            <a href="Servicios.html" data-key="nav-servicios" class="text-slate-300 hover:text-cyan-400 transition-colors">Servicios</a>
+            <a href="catalogo_de_trabajos.html" data-key="nav-catalogo" class="text-slate-300 hover:text-cyan-400 transition-colors">Catálogo de Trabajos</a>
+            <a href="index.html" data-key="nav-back" class="text-cyan-400 hover:underline">← Volver al Inicio</a>
+            <!-- BOTÓN SELECTOR DE IDIOMA GLOBAL -->
+            <button id="language-toggle" class="bg-slate-800 hover:bg-slate-700 text-cyan-400 border border-slate-700 px-3 py-1.5 rounded-lg font-bold transition-all text-xs tracking-wider uppercase">
+                EN
+            </button>
         </div>
     </nav>
 
     <main class="container mx-auto max-w-3xl py-12 px-6 flex-grow">
         <div class="text-center mb-8">
-            <h1 class="text-3xl font-black text-slate-900 mb-2">Solicitud de Consultoría Técnica</h1>
-            <p class="text-slate-600 text-sm">Por favor, registra tus datos y los requerimientos de tu empresa para ponernos en contacto vía WhatsApp o correo electrónico.</p>
+            <h1 data-key="cont-title" class="text-3xl font-black text-slate-900 mb-2">Solicitud de Consultoría Técnica</h1>
+            <p data-key="cont-subtitle" class="text-slate-600 text-sm">Por favor, registra tus datos y los requerimientos de tu empresa para ponernos en contacto vía WhatsApp o correo electrónico.</p>
         </div>
 
         <div class="bg-white rounded-2xl p-2 border border-slate-200 overflow-hidden shadow-xl">
-            <iframe 
-                src="https://forms.gle/LLnwg2FMeovSQq6g8" 
-                width="100%" 
-                height="750" 
-                frameborder="0" 
-                marginheight="0" 
+            <iframe
+                src="https://forms.gle/LLnwg2FMeovSQq6g8"
+                width="100%"
+                height="750"
+                frameborder="0"
+                marginheight="0"
                 marginwidth="0"
                 class="rounded-xl bg-white">
                 Cargando formulario...
@@ -42,9 +46,55 @@
         </div>
     </main>
 
-    <footer class="p-6 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
+    <footer data-key="footer-text" class="p-6 text-center text-slate-400 text-xs border-t border-slate-200 bg-white">
         Jefferson Seijas © 2026 | Infraestructura y Seguridad Eficiente.
     </footer>
 
+    <!-- LÓGICA GLOBAL DE PERSISTENCIA E IDIOMA INTERNO -->
+    <script>
+        const translations = {
+            "es": {
+                "nav-sub": "| Ingeniería Electrónica & Soluciones TI",
+                "nav-servicios": "Servicios",
+                "nav-catalogo": "Catálogo de Trabajos",
+                "nav-back": "← Volver al Inicio",
+                "cont-title": "Solicitud de Consultoría Técnica",
+                "cont-subtitle": "Por favor, registra tus datos y los requerimientos de tu empresa para ponernos en contacto vía WhatsApp o correo electrónico.",
+                "footer-text": "Jefferson Seijas © 2026 | Infraestructura y Seguridad Eficiente."
+            },
+            "en": {
+                "nav-sub": "| Electronics Engineering & IT Solutions",
+                "nav-servicios": "Services",
+                "nav-catalogo": "Project Catalog",
+                "nav-back": "← Back to Home",
+                "cont-title": "Technical Consulting Request",
+                "cont-subtitle": "Please submit your details and company requirements so we can reach out via WhatsApp or email.",
+                "footer-text": "Jefferson Seijas © 2026 | Efficient Infrastructure & Security."
+            }
+        };
+
+        let currentLang = localStorage.getItem('preferredLang') || 'es';
+        const langToggleBtn = document.getElementById('language-toggle');
+
+        function applyTranslations() {
+            langToggleBtn.textContent = currentLang === 'es' ? 'EN' : 'ES';
+            document.documentElement.lang = currentLang;
+
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang] && translations[currentLang][key]) {
+                    element.textContent = translations[currentLang][key];
+                }
+            });
+        }
+
+        applyTranslations();
+
+        langToggleBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+            localStorage.setItem('preferredLang', currentLang);
+            applyTranslations();
+        });
+    </script>
 </body>
 </html>
